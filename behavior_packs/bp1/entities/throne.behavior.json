@@ -1,0 +1,45 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ts:throne",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"spawn_egg": true,
+			"is_experimental": false
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:health": {
+				"value": 1,
+				"max": 1
+			},
+			"minecraft:collision_box": {
+				"width": 0.5,
+				"height": 2.0
+			},
+			"minecraft:movement": {
+				"value": 0.001
+			},
+			"minecraft:movement.generic": {},
+			"minecraft:fall_damage": {
+				"value": 0.0
+			},
+			"minecraft:scale": {
+				"value": 1.1
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:rideable": {
+				"seat_count": 1,
+				"interact_text": "Drive",
+				"seats": [{
+					"position": [0, 0.4, -0.1],
+					"min_rider_count": 0,
+					"max_rider_count": 1,
+          "rotate_rider_by": 0,
+          "lock_rider_rotation": 15
+				}]
+			}
+		}
+	}
+}

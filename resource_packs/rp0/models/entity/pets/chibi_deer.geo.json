@@ -1,0 +1,91 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.chibi_deer",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0.5, 5, 0],
+					"cubes": [
+						{"origin": [-2.5, 4, -5], "size": [5, 5, 9], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 9, -3],
+					"cubes": [
+						{"origin": [-3.5, 9, -8], "size": [7, 6, 6], "uv": [0, 14]},
+						{"origin": [-1.5, 9, -10], "size": [3, 2, 2], "uv": [19, 0]},
+						{"origin": [-2.5, 15, -7], "size": [1, 1, 1], "uv": [16, 29]},
+						{"origin": [1.5, 15, -7], "size": [1, 1, 1], "uv": [9, 29]}
+					]
+				},
+				{
+					"name": "rightEar",
+					"parent": "head",
+					"pivot": [-2.75, 14.25, -4.5],
+					"cubes": [
+						{"origin": [-4.5, 14, -5], "size": [2, 3, 1], "pivot": [-2.5, 16, -4.5], "rotation": [0, 0, -25], "uv": [0, 14]}
+					]
+				},
+				{
+					"name": "leftEar",
+					"parent": "head",
+					"pivot": [2.75, 14.5, -4.5],
+					"cubes": [
+						{"origin": [2.5, 14, -5], "size": [2, 3, 1], "pivot": [2.5, 16, -4.5], "rotation": [0, 0, 25], "uv": [19, 4]}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "body",
+					"pivot": [0, 8.75, 4],
+					"cubes": [
+						{"origin": [-0.5, 7, 4], "size": [1, 2, 1], "uv": [0, 6]}
+					]
+				},
+				{
+					"name": "legLeftF",
+					"parent": "body",
+					"pivot": [1.5, 4, -3],
+					"cubes": [
+						{"origin": [0.5, 0, -4], "size": [2, 4, 2], "uv": [24, 24]}
+					]
+				},
+				{
+					"name": "legRightB",
+					"parent": "body",
+					"pivot": [-1.5, 4, 4],
+					"cubes": [
+						{"origin": [-2.5, 0, 2], "size": [2, 4, 2], "uv": [20, 14]}
+					]
+				},
+				{
+					"name": "legLeftB",
+					"parent": "body",
+					"pivot": [1.5, 4, 3],
+					"cubes": [
+						{"origin": [0.5, 0, 2], "size": [2, 4, 2], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "legRightF",
+					"parent": "body",
+					"pivot": [-1.5, 4, -3],
+					"cubes": [
+						{"origin": [-2.5, 0, -4], "size": [2, 4, 2], "uv": [0, 26]}
+					]
+				}
+			]
+		}
+	]
+}

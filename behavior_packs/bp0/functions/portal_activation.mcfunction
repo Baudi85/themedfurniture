@@ -1,0 +1,1 @@
+execute @a[x=1093,y=0,z=-1102,dx=5,dy=5,dz=1] ~ ~ ~ function portal

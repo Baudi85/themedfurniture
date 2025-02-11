@@ -1,0 +1,225 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:rock_2",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "spawn_egg": true,
+      "is_experimental": false,
+      "animations": {
+        "init": "controller.animation.furniture.init",
+        "rotate_handler": "controller.animation.furniture.rotate",
+        "despawn_handler": "controller.animation.furniture.despawn",
+        "shifter_handler": "controller.animation.furniture.shift",
+        "move": "controller.animation.furniture.move",
+        "center": "controller.animation.furniture.center",
+        "remove_move": "controller.animation.furniture.remove_move"
+
+      },
+      "scripts": {
+        "animate": [
+          "init",
+          "rotate_handler",
+          "despawn_handler",
+          "shifter_handler",
+          "move",
+          "center",
+          "remove_move"
+        ]
+      }
+    },
+    "component_groups": {
+      "reset": {"minecraft:skin_id": { "value": 0 } },
+      "rotate": { "minecraft:skin_id": { "value": 1 } },
+      "rotate_cc": { "minecraft:skin_id": { "value": 2 } },
+      "despawn": { "minecraft:skin_id": { "value": 3 } },
+      "shift_neg_x": { "minecraft:skin_id": { "value": 4 } },
+      "shift_pos_x": { "minecraft:skin_id": { "value": 5 } },
+      "shift_neg_z": { "minecraft:skin_id": { "value": 6 } },
+      "shift_pos_z": { "minecraft:skin_id": { "value": 7 } },
+      "move": { "minecraft:skin_id": { "value": 8 } },
+      "center": { "minecraft:skin_id": { "value": 9 } },
+      "snap_rotation": { "minecraft:skin_id": { "value": 10 } },
+      "remove_move": { "minecraft:skin_id": { "value": 11 } },
+
+      "shift": { "minecraft:is_sheared": {} },
+      "shift_left_click": { "minecraft:is_sheared": {}, "minecraft:is_ignited": {} },
+      "variant_0": { "minecraft:variant": { "value": 0 } },
+      "north": { "minecraft:variant": { "value": 2 } },
+      "south": { "minecraft:variant": { "value": 3 } },
+      "west": { "minecraft:variant": { "value": 4 } },
+      "east": { "minecraft:variant": { "value": 5 } },
+      "despawn_left_click": {
+        "minecraft:loot": { "table": "loot_tables/entities/spawn_egg.json" },
+        "minecraft:health": { "value": 0 },
+        "minecraft:instant_despawn": {}
+      },
+
+      "usable": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "domain": "hand", "value": "custom:rotator", "subject": "other" },
+                "event": "rotate"
+              }
+            },
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "domain": "hand", "value": "custom:despawner", "subject": "other" },
+                "event": "despawn"
+              },
+              "add_items": {
+                "table":  "loot_tables/entities/spawn_egg.json"
+              }
+            },
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "domain": "hand", "value": "custom:shifter", "subject": "other" },
+                "event": "shift"
+              }
+            },
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "domain": "hand", "value": "custom:move_tool", "subject": "other" },
+                "event": "move"
+              }
+            },
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "domain": "hand", "value": "custom:center_tool", "subject": "other" },
+                "event": "center"
+              }
+            },
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "domain": "hand", "value": "custom:display_only_converter", "subject": "other" },
+                "event": "display_only"
+              }
+            }
+          ]
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+             {
+            "cause": "all",
+            "deals_damage": false,
+            "on_damage": {
+              "filters": { "test": "has_equipment", "domain": "hand", "value": "custom:rotator", "subject": "other" },
+              "event": "rotate_cc"
+               }
+              },
+              {
+                "cause": "all",
+                "deals_damage": false,
+                "on_damage": {
+                  "filters": { "test": "has_equipment", "domain": "hand", "value": "custom:despawner", "subject": "other" },
+                  "event": "despawn_left_click"
+                }
+              },
+              {
+                "cause": "all",
+                "deals_damage": false,
+                "on_damage": {
+                  "filters": { "test": "has_equipment", "domain": "hand", "value": "custom:shifter", "subject": "other" },
+                  "event": "shift_left_click"
+                   }
+               },
+               {
+                "cause": "all",
+                "deals_damage": false,
+                "on_damage": {
+                  "filters": { "test": "has_equipment", "domain": "hand", "value": "custom:move_tool", "subject": "other" },
+                  "event": "remove_move"
+                   }
+               },
+               {
+                "cause": "all",
+                "deals_damage": false,
+                "on_damage": {
+                  "filters": { "test": "has_equipment", "domain": "hand", "value": "custom:center_tool", "subject": "other" },
+                  "event": "snap_rotation"
+                   }
+               }
+            ]
+        }
+      },
+      "display_only": {
+        "minecraft:damage_sensor": {
+          "triggers":[
+            {
+              "cause": "all",
+              "deals_damage": false,
+              "on_damage": {
+                "filters": { "test": "has_equipment", "domain": "hand", "value": "custom:display_only_converter", "subject": "other" },
+                "event": "remove_display_only"
+              }
+            },
+            { "cause": "all", "deals_damage": false }
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:health": { "value": 5, "max": 5 },
+      "minecraft:knockback_resistance": { "value": 100000 },
+      "minecraft:loot": { "table": "loot_tables/entities/rock.json" },
+      "minecraft:physics": {},
+      "minecraft:type_family": {
+        "family": [
+          "custom",
+          "furniture",
+          "rock"
+        ]
+      },
+      "minecraft:scale": { "value": 1 },
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 0.5
+      },
+      "minecraft:breathable": {
+        "breathes_solids": true,
+        "breathes_lava": true,
+        "breathes_water": true,
+        "breathes_air": true
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": { "add": { "component_groups": [ "reset", "usable" ] } },
+      "rotate": { "add": { "component_groups": [ "rotate" ] } },
+      "rotate_cc": { "add": { "component_groups": [ "rotate_cc" ] } },
+      "remove_rotate": { "add": { "component_groups": [ "reset" ] } },
+      "despawn": { "add": {"component_groups": [ "despawn" ] } },
+      "despawn_left_click": { "add": {"component_groups": [ "despawn_left_click" ] } },
+      "remove_despawn": { "add": { "component_groups": ["reset" ] } },
+      "remove_shifter": { "add": { "component_groups": [ "reset" ] } },
+      "move": { "add": { "component_groups": [ "move" ] } },
+      "remove_move": { "add": { "component_groups": [ "remove_move" ] } },
+      "center": { "add": { "component_groups": [ "center" ] } },
+      "snap_rotation": { "add": { "component_groups": [ "snap_rotation" ] } },
+      "remove_center": { "add": { "component_groups": [ "reset" ] } },
+      "reset": { "add": { "component_groups": [ "reset" ] } },
+
+      "shift": { "add": { "component_groups": [ "shift" ] } },
+      "shift_left_click": { "add": { "component_groups": [ "shift_left_click" ] } },
+      "remove_shift": {
+        "remove": { "component_groups": [ "shift", "shift_left_click", "north", "south", "west", "east" ] },
+        "add": { "component_groups": [ "variant_0" ] }
+      },
+      "north": { "add": { "component_groups": [ "north"] }, "remove": { "component_groups": [ "variant_0" ] } },
+      "south": { "add": { "component_groups": [ "south"] }, "remove": { "component_groups": [ "variant_0" ] } },
+      "west": { "add": { "component_groups": [ "west"] }, "remove": { "component_groups": [ "variant_0" ] } },
+      "east": { "add": { "component_groups": [ "east"] }, "remove": { "component_groups": [ "variant_0" ] } },
+
+      "display_only": {
+        "remove": { "component_groups": [ "usable" ] },
+        "add": { "component_groups": [ "display_only" ] }
+      },
+      "remove_display_only": {
+        "add": { "component_groups": [ "usable" ] },
+        "remove": { "component_groups": [ "display_only" ] }
+      }
+    }
+  }
+}

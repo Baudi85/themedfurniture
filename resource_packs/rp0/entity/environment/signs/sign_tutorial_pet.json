@@ -1,0 +1,24 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:sign_tutorial_pet",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/environment/signs/sign_tutorial_pet"
+        },
+        "geometry": {
+          "default": "geometry.sign_tutorial"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": {
+          "base_color": "#f7d333",
+          "overlay_color": "#ffffff"
+        }
+      }
+    }
+  }

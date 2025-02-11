@@ -1,0 +1,41 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:chibi_forest",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/pets/forest"
+        },
+        "geometry": {
+          "default": "geometry.chibi_deer"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "chibi_egg_forest" },
+        "animations": {
+          "walk": "animation.chibi_deer.walk",
+          "idle": "animation.chibi_deer.idle",
+          "sit": "animation.chibi_deer.sit",
+
+          "move_sittable": "controller.animation.generic.move_sittable",
+          "sit_sound_controller": "controller.animation.pet.sit",
+          "ambient_sound_controller": "controller.animation.pet.ambient"
+        },
+        "scripts": {
+          "animate": [
+            "move_sittable",
+            "sit_sound_controller",
+            "ambient_sound_controller"
+          ]
+        },
+        "sound_effects": {
+          "sit": "custom.pets.deer.sit",
+          "ambient": "custom.pets.deer.ambient"
+        }
+      }
+    }
+  }

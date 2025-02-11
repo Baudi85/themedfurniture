@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ts:billboard_instagram",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/billboard/instagram"
+      },
+      "geometry": {
+        "default": "geometry.billboard"
+      },
+      "render_controllers": [
+        "controller.render.generic"
+      ],
+      "spawn_egg": {
+        "base_color": "#8134AF",
+        "overlay_color": "#DD2A7B"
+      }
+    }
+  }
+}

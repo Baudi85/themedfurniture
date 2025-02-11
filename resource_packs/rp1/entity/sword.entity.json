@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ts:sword",
+      "materials": {
+        "default": "sword"
+      },
+      "textures": {
+        "diamond": "textures/entity/sword/diamond",
+		    "gold": "textures/entity/sword/gold",
+		    "iron": "textures/entity/sword/iron",
+		    "stone": "textures/entity/sword/stone",
+		    "wood": "textures/entity/sword/wood"
+      },
+      "geometry": {
+        "default": "geometry.sword"
+      },
+      "render_controllers": [
+        "controller.render.sword"
+      ],
+      "spawn_egg": {
+        "base_color": "#8baaa7",
+        "overlay_color": "9bec4e"
+      }
+    }
+  }
+}

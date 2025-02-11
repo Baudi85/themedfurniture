@@ -1,0 +1,36 @@
+{
+    "tiers": [
+        {
+            "trades": [
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:center_tool" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:despawner" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:move_tool" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:rotator" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:shifter" } ],
+                    "max_uses": -1
+                }
+            ]
+        }
+    ]
+}
+
+
+

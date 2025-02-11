@@ -1,0 +1,135 @@
+{
+    "tiers": [
+        {
+            "trades": [
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "custom:decoration_winter", "quantity": 30 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:chibi_winter" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "custom:chibi_food" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_armoire" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_bar_stool" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_bed" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_coffee_table" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_couch" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_dining_chair" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_dining_table" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_dresser" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_living_room_chair" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_love_seat" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_side_table" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_table_lamp" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_tall_floor_lamp" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_tv" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:winter_plant" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 5 } ],
+                    "gives": [ { "item": "minecraft:painting"  } ],
+                    "max_uses": -1
+                },
+
+                
+
+
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:center_tool" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:despawner" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:move_tool" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:rotator" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:shifter" } ],
+                    "max_uses": -1
+                }
+
+                
+
+            ]
+        }
+    ]
+}

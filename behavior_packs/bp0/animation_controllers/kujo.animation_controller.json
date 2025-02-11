@@ -1,0 +1,61 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.custom_kujo": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "echo_event_main": "query.skin_id == 1"
+                        },
+                        {
+                            "echo_event_main_2": "query.skin_id == 2"
+                        },
+                        {
+                            "echo_event_waiting_for_new_player": "query.skin_id == 3"
+                        }
+                    ]
+                },
+                "echo_event_main": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.notification @a ~ ~ ~",
+                        "/title @a[x=1089,y=0,z=-1115,dx=12,dy=5,dz=16] times 20 200 20",
+                        "@s echo:clear",
+                        "@s echo:main_2"
+                    ]
+                },
+                "echo_event_main_2": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.kujo.hello_looking_for @a ~ ~ ~",
+                        "/title @a[r=5] actionbar §6Kujo:§f Hello, looking for some furniture tools?",
+                        "/tag @s remove just_spawned",
+                        "@s echo:clear",
+                        "@s echo:waiting_for_new_player"
+                    ]
+                },
+                "echo_event_waiting_for_new_player": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s remove reset",
+                        "@s echo:clear",
+                        "@s echo:main"
+                    ]
+                }
+            }
+        }
+    }
+}

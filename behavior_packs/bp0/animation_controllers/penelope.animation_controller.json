@@ -1,0 +1,60 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.custom_penelope": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "echo_event_main": "query.skin_id == 1"
+                        },
+                        {
+                            "echo_event_main_2": "query.skin_id == 2"
+                        },
+                        {
+                            "echo_event_main_3": "query.skin_id == 3"
+                        }
+                    ]
+                },
+                "echo_event_main": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.notification @a ~ ~ ~",
+                        "/title @a[x=1089,y=0,z=-1115,dx=12,dy=5,dz=16] times 20 200 20",
+                        "@s echo:clear",
+                        "@s echo:main_2"
+                    ]
+                },
+                "echo_event_main_2": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.penelope.im_just_heading @a ~ ~ ~",
+                        "/title @a[r=8] actionbar §6Penelope:§f I'm just heading across the bridge to see Bonnie. -",
+                        "@s echo:clear",
+                        "@s echo:main_3"
+                    ]
+                },
+                "echo_event_main_3": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ],
+                    "on_entry": [
+                        "/title @a[r=8] actionbar §6Penelope:§f - I need some monster supplies. What about you?",
+                        "@s echo:clear",
+                        "@s echo:main"
+                    ]
+                }
+            }
+        }
+    }
+}

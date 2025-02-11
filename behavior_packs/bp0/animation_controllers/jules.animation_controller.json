@@ -1,0 +1,123 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.custom_jules": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "echo_event_main": "query.skin_id == 1"
+                        },
+                        {
+                            "echo_event_main_2": "query.skin_id == 2"
+                        },
+                        {
+                            "echo_event_main_3": "query.skin_id == 3"
+                        },
+                        {
+                            "echo_event_main_4": "query.skin_id == 4"
+                        },
+                        {
+                            "echo_event_main_5": "query.skin_id == 5"
+                        },
+                        {
+                            "echo_event_main_6": "query.skin_id == 6"
+                        },
+                        {
+                            "echo_event_main_7": "query.skin_id == 7"
+                        }
+                    ]
+                },
+                "echo_event_main": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.notification @a ~ ~ ~",
+                        "/title @a[x=1089,y=0,z=-1115,dx=12,dy=5,dz=16] times 20 200 20",
+                        "@s echo:clear",
+                        "@s echo:main_2"
+                    ]
+                },
+                "echo_event_main_2": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.jules.ever_since_the @a ~ ~ ~",
+                        "/title @a[r=8] actionbar §6Jules:§f Ever since the earthquakes started happening, all the residents moved out.",
+                        "@s echo:clear",
+                        "@s echo:main_3"
+                    ]
+                },
+                "echo_event_main_3": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.jules.lucky_for_you @a ~ ~ ~",
+                        "/title @a[r=8] actionbar §6Jules:§f Lucky for you, that means you can claim -",
+                        "@s echo:clear",
+                        "@s echo:main_4"
+                    ]
+                },
+                "echo_event_main_4": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ],
+                    "on_entry": [
+                        "/title @a[r=8] actionbar §6Jules:§f - ownership of any property you like, for free!",
+                        "@s echo:clear",
+                        "@s echo:main_5"
+                    ]
+                },
+                "echo_event_main_5": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 5"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.jules.if_you_face @a ~ ~ ~",
+                        "/title @a[r=8] actionbar §6Jules:§f If you face the bridge, you should follow the road left. -",
+                        "@s echo:clear",
+                        "@s echo:main_6"
+                    ]
+                },
+                "echo_event_main_6": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 6"
+                        }
+                    ],
+                    "on_entry": [
+                        "/title @a[r=8] actionbar §6Jules:§f - You'll find Chuck at the nature park.",
+                        "@s echo:clear",
+                        "@s echo:main_7"
+                    ]
+                },
+                "echo_event_main_7": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 7"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.jules.he_might_have @a ~ ~ ~",
+                        "/title @a[r=8] actionbar §6Jules:§f He might have some resources you can't get here at the store.",
+                        "@s echo:clear",
+                        "@s echo:main"
+                    ]
+                }
+            }
+        }
+    }
+}

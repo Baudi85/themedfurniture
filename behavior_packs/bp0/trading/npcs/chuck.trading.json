@@ -1,0 +1,106 @@
+{
+    "tiers": [
+        {
+            "trades": [
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 25 } ],
+                    "gives": [ { "item": "minecraft:wood", "functions": [ { "function": "set_data", "data": 0 }, { "function": "set_count", "count": 10 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 25 } ],
+                    "gives": [ { "item": "minecraft:wood", "functions": [ { "function": "set_data", "data": 1 }, { "function": "set_count", "count": 10 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 25 } ],
+                    "gives": [ { "item": "minecraft:wood", "functions": [ { "function": "set_data", "data": 2 }, { "function": "set_count", "count": 10 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 25 } ],
+                    "gives": [ { "item": "minecraft:wood", "functions": [ { "function": "set_data", "data": 3 }, { "function": "set_count", "count": 10 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 25 } ],
+                    "gives": [ { "item": "minecraft:wood", "functions": [ { "function": "set_data", "data": 4 }, { "function": "set_count", "count": 10 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 25 } ],
+                    "gives": [ { "item": "minecraft:wood", "functions": [ { "function": "set_data", "data": 5 }, { "function": "set_count", "count": 10 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 25 } ],
+                    "gives": [ { "item": "minecraft:sapling", "functions": [ { "function": "set_data", "data": 0 }, { "function": "set_count", "count": 5 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 25 } ],
+                    "gives": [ { "item": "minecraft:sapling", "functions": [ { "function": "set_data", "data": 1 }, { "function": "set_count", "count": 5 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 25 } ],
+                    "gives": [ { "item": "minecraft:sapling", "functions": [ { "function": "set_data", "data": 2 }, { "function": "set_count", "count": 5 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 25 } ],
+                    "gives": [ { "item": "minecraft:sapling", "functions": [ { "function": "set_data", "data": 3 }, { "function": "set_count", "count": 5 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 25 } ],
+                    "gives": [ { "item": "minecraft:sapling", "functions": [ { "function": "set_data", "data": 4 }, { "function": "set_count", "count": 5 } ] } ],
+                    "max_uses": -1
+                },                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 25 } ],
+                    "gives": [ { "item": "minecraft:sapling", "functions": [ { "function": "set_data", "data": 5 }, { "function": "set_count", "count": 5 } ] } ],
+                    "max_uses": -1
+                },
+
+
+                {
+                    "wants": [ { "item": "minecraft:log:0", "quantity": 15 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 12  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:log:1", "quantity": 15 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 12  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:log:2", "quantity": 15 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 12  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:log:3", "quantity": 15 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 12  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:log2:0", "quantity": 15 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 12  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:log2:1", "quantity": 15 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 12  } ],
+                    "max_uses": -1
+                },
+
+
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 6 } ],
+                    "gives": [ { "item": "minecraft:iron_axe" } ],
+                    "max_uses": -1
+                }
+            ]
+        }
+    ]
+}

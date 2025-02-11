@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "custom:dynamite_big",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/custom/entity/dynamite_big"
+      },
+      "geometry": {
+        "default": "geometry.dynamite_big"
+      },
+      "render_controllers": [
+        "controller.render.generic"
+      ],
+      "spawn_egg": {
+        "texture": "egg_dynamite_big",
+        "texture_index": 0
+      },
+      "animations": {
+        "ignite": "animation.dynamite_big.ignite",
+
+        "dynamite": "controller.animation.dynamite"
+      },
+      "scripts": {
+        "animate": [
+          "dynamite"
+        ]
+      }
+    }
+  }
+}

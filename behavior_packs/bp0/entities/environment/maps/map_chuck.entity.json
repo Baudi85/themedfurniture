@@ -1,0 +1,48 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:map_chuck",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "spawn_egg": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+    },
+    "components": {
+      "minecraft:health": { "value": 5, "max": 5 },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:knockback_resistance": { "value": 100000 },
+      "minecraft:type_family": {
+        "family": [
+          "custom",
+          "furniture",
+          "map"
+        ]
+      },
+      "minecraft:scale": { "value": 2 },
+      "minecraft:collision_box": {
+        "width": 0.0,
+        "height": 0.0
+      },
+      "minecraft:breathable": {
+        "breathes_solids": true,
+        "breathes_lava": true,
+        "breathes_water": true,
+        "breathes_air": true
+      }
+    },
+    "events": {
+    }
+  }
+}

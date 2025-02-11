@@ -1,0 +1,12 @@
+{
+  "format_version": "1.17.40",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:display_target",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+      
+    }
+  }
+}

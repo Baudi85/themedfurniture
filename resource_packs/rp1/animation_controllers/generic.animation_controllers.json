@@ -1,0 +1,69 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.generic.move": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [ "idle" ],
+          //"transitions": [ { "walk": "q.is_moving" } ],
+          "transitions": [ { "walk": "q.ground_speed" } ],
+          "blend_transition": 0.1
+        },
+        "walk": {
+          "animations": [ "walk" ],
+          //"transitions": [ { "idle": "!q.is_moving" } ],
+          "transitions": [ { "idle": "!q.ground_speed" } ],
+          "blend_transition": 0.1
+        }
+      }
+    },
+    "controller.animation.generic.move_sittable": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [ "idle" ],
+          //"transitions": [ { "walk": "q.is_moving" } ],
+          "transitions": [
+            { "walk": "q.ground_speed" },
+            { "sitting": "q.is_sitting && !q.ground_speed" }
+          ],
+          "blend_transition": 0.1
+        },
+        "walk": {
+          "animations": [ "walk" ],
+          //"transitions": [ { "idle": "!q.is_moving" } ],
+          "transitions": [
+            { "idle": "!q.ground_speed" },
+            { "idle": "q.is_sitting && !q.ground_speed" }
+          ],
+          "blend_transition": 0.1
+        },
+        "sitting": {
+          "animations": [ "sit" ],
+          "transitions": [
+            { "idle": "!query.is_sitting && !q.ground_speed" },
+            { "walk": "!query.is_sitting && q.ground_speed" }
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    },
+    "controller.animation.generic.attack": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            { "attack": "variable.attack_time > 0.01" }
+          ]
+        },
+        "attack": {
+          "animations": [ "attack" ],
+          "transitions": [
+            { "default": "variable.attack_time <= 0.01 && query.all_animations_finished" }
+          ]
+        }
+      }
+    }
+  }
+}

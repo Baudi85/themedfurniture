@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:display_rainbow_couch",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/furniture/rainbow/rainbow_couch"
+        },
+        "geometry": {
+          "default": "geometry.rainbow_couch"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "furniture_egg_rainbow_couch" }
+      }
+    }
+  }

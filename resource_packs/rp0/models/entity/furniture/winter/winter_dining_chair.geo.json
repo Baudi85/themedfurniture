@@ -1,0 +1,47 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.winter_dining_chair",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "dining_chair_winter",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [4, 0, -5], "size": [1, 4, 1], "uv": [12, 31]},
+						{"origin": [3.5, 4, -5.5], "size": [2, 3, 2.2], "uv": [0, 31]},
+						{"origin": [-5.5, 4, -5.5], "size": [2, 3, 2.2], "uv": [24, 14]},
+						{"origin": [-5, 0, -5], "size": [1, 4, 1], "uv": [8, 31]},
+						{"origin": [3.5, 4, 3.5], "size": [2, 3, 2], "uv": [0, 5]},
+						{"origin": [4, 0, 4], "size": [1, 4, 1], "uv": [8, 5]},
+						{"origin": [-5.5, 4, 3.5], "size": [2, 3, 2.2], "uv": [0, 0]},
+						{"origin": [-5, 0, 4], "size": [1, 4, 1], "uv": [8, 0]},
+						{"origin": [-6, 7, -6], "size": [12, 2, 12], "uv": [0, 0]},
+						{"origin": [6, 4, -6], "size": [0, 3, 12], "uv": [0, 5]},
+						{"origin": [-6, 4, -6], "size": [0, 3, 12], "uv": [0, 2]},
+						{"origin": [-6, 4, -6], "size": [12, 3, 0], "uv": [22, 23]},
+						{"origin": [-6, 4, 6], "size": [12, 3, 0], "uv": [22, 20]}
+					]
+				},
+				{
+					"name": "chair",
+					"parent": "dining_chair_winter",
+					"pivot": [0, 9, 4.5],
+					"rotation": [-2.5, 0, 0],
+					"cubes": [
+						{"origin": [4, 9, 4], "size": [2, 12, 2], "pivot": [4, 9, 4], "rotation": [0, 0, 2.5], "uv": [30, 26]},
+						{"origin": [-5, 9, 4.5], "size": [10, 10, 1], "uv": [0, 20]},
+						{"origin": [-6, 9, 4], "size": [2, 12, 2], "pivot": [-4, 9, 4], "rotation": [0, 0, -2.5], "uv": [22, 26]}
+					]
+				}
+			]
+		}
+	]
+}

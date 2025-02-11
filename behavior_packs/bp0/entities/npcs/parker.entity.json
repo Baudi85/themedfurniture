@@ -1,0 +1,91 @@
+{
+    "format_version": "1.16",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "custom:parker",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": [
+                    "custom:parker_commands"
+                ]
+            },
+            "animations": {
+                "custom:parker_commands": "controller.animation.custom_parker"
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": [
+                    "custom",
+                    "npc"
+                ]
+            },
+            "minecraft:scale": {
+                "value": 1
+            },
+            "minecraft:physics": {},
+            "minecraft:collision_box": {
+                "height": 2,
+                "width": 1
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "all",
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:behavior.look_at_player": {
+                "look_distance": 64,
+                "priority": 0,
+                "probability": 1,
+                "look_time": [
+                    64,
+                    64
+                ]
+            },
+            "minecraft:movement": {},
+            "minecraft:trade_table": {
+                "display_name": "entity.parker.trade_table_name",
+                "table": "trading/npcs/parker.trading.json",
+                "new_screen": true
+            }
+        },
+        "component_groups": {
+            "echo:execute_no_command": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "echo:despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "events": {
+            "echo:clear": {
+                "add": {
+                    "component_groups": [
+                        "echo:execute_no_command"
+                    ]
+                },
+                "remove": {
+                    "component_groups": []
+                }
+            },
+            "echo:despawn": {
+                "add": {
+                    "component_groups": [
+                        "echo:despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

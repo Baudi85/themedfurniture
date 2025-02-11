@@ -1,0 +1,41 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:chibi_mermaid",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/pets/mermaid"
+        },
+        "geometry": {
+          "default": "geometry.chibi_axolotl"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "chibi_egg_mermaid" },
+        "animations": {
+          "walk": "animation.chibi_axolotl.idle",
+          "idle": "animation.chibi_axolotl.idle",
+          "sit": "animation.chibi_axolotl.sit",
+
+          "move_sittable": "controller.animation.generic.move_sittable",
+          "sit_sound_controller": "controller.animation.pet.sit",
+          "ambient_sound_controller": "controller.animation.pet.ambient"
+        },
+        "scripts": {
+          "animate": [
+            "move_sittable",
+            "sit_sound_controller",
+            "ambient_sound_controller"
+          ]
+        },
+        "sound_effects": {
+          "sit": "custom.pets.axolotl.sit",
+          "ambient": "custom.pets.axolotl.ambient"
+        }
+      }
+    }
+  }

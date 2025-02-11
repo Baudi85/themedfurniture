@@ -1,0 +1,38 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:display_forest_dresser",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "spawn_egg": true,
+      "is_experimental": false
+    },
+    "component_groups": {},
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers":[
+          { "cause": "all", "deals_damage": false }
+        ]
+      },
+      "minecraft:inventory": {
+        "container_type": "inventory",
+        "inventory_size": 27
+      },
+      "minecraft:type_family": { "family": [ "display", "display_forest" ] },
+      "minecraft:scale": { "value": 1 },
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 0.91
+      },
+      "minecraft:breathable": {
+        "breathes_solids": true,
+        "breathes_lava": true,
+        "breathes_water": true,
+        "breathes_air": true
+      }
+    },
+    "events": {
+    }
+  }
+}

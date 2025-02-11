@@ -1,0 +1,1 @@
+execute @e[family=display_luxury] ~ ~ ~ summon custom:display_target

@@ -1,0 +1,408 @@
+{
+    "format_version": "1.16",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "custom:pickles_the_construction_worker",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": [
+                    "custom:pickles_the_construction_worker_commands"
+                ]
+            },
+            "animations": {
+                "custom:pickles_the_construction_worker_commands": "controller.animation.custom_pickles_the_construction_worker"
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": [
+                    "custom",
+                    "npc"
+                ]
+            },
+            "minecraft:scale": {
+                "value": 1
+            },
+            "minecraft:physics": {},
+            "minecraft:collision_box": {
+                "height": 2,
+                "width": 1
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "all",
+                        "deals_damage": false,
+                        "on_damage": {
+                            "event": "echo:main"
+                        }
+                    }
+                ]
+            },
+            "minecraft:behavior.look_at_player": {
+                "look_distance": 64,
+                "priority": 0,
+                "probability": 1,
+                "look_time": [
+                    64,
+                    64
+                ]
+            },
+            "minecraft:movement": {},
+            "minecraft:trade_table": {
+                "display_name": "entity.pickles.trade_table_name",
+                "table": "trading/npcs/pickles.trading.json",
+                "new_screen": true
+            }
+        },
+        "component_groups": {
+            "echo:main": {
+                "minecraft:environment_sensor": {
+                    "triggers": [
+                        {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "distance_to_nearest_player",
+                                        "operator": "<",
+                                        "value": 10
+                                    }
+                                ]
+                            },
+                            "event": "echo:event_main"
+                        }
+                    ]
+                }
+            },
+            "echo:main_2": {
+                "minecraft:timer": {
+                    "looping": false,
+                    "time": 1,
+                    "time_down_event": {
+                        "event": "echo:event_main_2"
+                    }
+                }
+            },
+            "echo:main_3": {
+                "minecraft:interact": {
+                    "interactions": [
+                        {
+                            "on_interact": {
+                                "filters": {
+                                    "all_of": [
+                                        {
+                                            "test": "is_family",
+                                            "subject": "other",
+                                            "value": "player"
+                                        },
+                                        {
+                                            "test": "has_equipment",
+                                            "domain": "hand",
+                                            "subject": "other",
+                                            "value": "name_tag",
+                                            "operator": "!="
+                                        }
+                                    ]
+                                },
+                                "interact_text": "Click to Talk",
+                                "event": "echo:event_main_3"
+                            }
+                        }
+                    ]
+                }
+            },
+            "echo:main_4": {
+                "minecraft:timer": {
+                    "looping": false,
+                    "time": 2,
+                    "time_down_event": {
+                        "event": "echo:event_main_4"
+                    }
+                }
+            },
+            "echo:main_5": {
+                "minecraft:interact": {
+                    "interactions": [
+                        {
+                            "on_interact": {
+                                "filters": {
+                                    "all_of": [
+                                        {
+                                            "test": "is_family",
+                                            "subject": "other",
+                                            "value": "player"
+                                        },
+                                        {
+                                            "test": "has_equipment",
+                                            "domain": "hand",
+                                            "subject": "other",
+                                            "value": "name_tag",
+                                            "operator": "!="
+                                        }
+                                    ]
+                                },
+                                "interact_text": "Click to Talk",
+                                "event": "echo:event_main_5"
+                            }
+                        }
+                    ]
+                }
+            },
+            "echo:main_6": {
+                "minecraft:interact": {
+                    "interactions": [
+                        {
+                            "on_interact": {
+                                "filters": {
+                                    "all_of": [
+                                        {
+                                            "test": "is_family",
+                                            "subject": "other",
+                                            "value": "player"
+                                        },
+                                        {
+                                            "test": "has_equipment",
+                                            "domain": "hand",
+                                            "subject": "other",
+                                            "value": "name_tag",
+                                            "operator": "!="
+                                        }
+                                    ]
+                                },
+                                "interact_text": "Click to Talk",
+                                "event": "echo:event_main_6"
+                            }
+                        }
+                    ]
+                }
+            },
+            "echo:main_7": {
+                "minecraft:timer": {
+                    "looping": false,
+                    "time": 2,
+                    "time_down_event": {
+                        "event": "echo:event_main_7"
+                    }
+                }
+            },
+            "echo:waiting_for_new_player": {
+                "minecraft:environment_sensor": {
+                    "triggers": [
+                        {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_tag",
+                                        "value": "reset"
+                                    }
+                                ]
+                            },
+                            "event": "echo:event_waiting_for_new_player"
+                        }
+                    ]
+                }
+            },
+            "echo:event_main": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "echo:event_main_2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            },
+            "echo:event_main_3": {
+                "minecraft:skin_id": {
+                    "value": 3
+                }
+            },
+            "echo:event_main_4": {
+                "minecraft:skin_id": {
+                    "value": 4
+                }
+            },
+            "echo:event_main_5": {
+                "minecraft:skin_id": {
+                    "value": 5
+                }
+            },
+            "echo:event_main_6": {
+                "minecraft:skin_id": {
+                    "value": 6
+                }
+            },
+            "echo:event_main_7": {
+                "minecraft:skin_id": {
+                    "value": 7
+                }
+            },
+            "echo:event_waiting_for_new_player": {
+                "minecraft:skin_id": {
+                    "value": 8
+                }
+            },
+            "echo:execute_no_command": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "echo:despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "echo:main"
+                    ]
+                }
+            },
+            "echo:clear": {
+                "add": {
+                    "component_groups": [
+                        "echo:execute_no_command"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "echo:main",
+                        "echo:main_2",
+                        "echo:main_3",
+                        "echo:main_4",
+                        "echo:main_5",
+                        "echo:main_6",
+                        "echo:main_7",
+                        "echo:waiting_for_new_player"
+                    ]
+                }
+            },
+            "echo:despawn": {
+                "add": {
+                    "component_groups": [
+                        "echo:despawn"
+                    ]
+                }
+            },
+            "echo:main": {
+                "add": {
+                    "component_groups": [
+                        "echo:main"
+                    ]
+                }
+            },
+            "echo:main_2": {
+                "add": {
+                    "component_groups": [
+                        "echo:main_2"
+                    ]
+                }
+            },
+            "echo:main_3": {
+                "add": {
+                    "component_groups": [
+                        "echo:main_3"
+                    ]
+                }
+            },
+            "echo:main_4": {
+                "add": {
+                    "component_groups": [
+                        "echo:main_4"
+                    ]
+                }
+            },
+            "echo:main_5": {
+                "add": {
+                    "component_groups": [
+                        "echo:main_5"
+                    ]
+                }
+            },
+            "echo:main_6": {
+                "add": {
+                    "component_groups": [
+                        "echo:main_6"
+                    ]
+                }
+            },
+            "echo:main_7": {
+                "add": {
+                    "component_groups": [
+                        "echo:main_7"
+                    ]
+                }
+            },
+            "echo:waiting_for_new_player": {
+                "add": {
+                    "component_groups": [
+                        "echo:waiting_for_new_player"
+                    ]
+                }
+            },
+            "echo:event_main": {
+                "add": {
+                    "component_groups": [
+                        "echo:event_main"
+                    ]
+                }
+            },
+            "echo:event_main_2": {
+                "add": {
+                    "component_groups": [
+                        "echo:event_main_2"
+                    ]
+                }
+            },
+            "echo:event_main_3": {
+                "add": {
+                    "component_groups": [
+                        "echo:event_main_3"
+                    ]
+                }
+            },
+            "echo:event_main_4": {
+                "add": {
+                    "component_groups": [
+                        "echo:event_main_4"
+                    ]
+                }
+            },
+            "echo:event_main_5": {
+                "add": {
+                    "component_groups": [
+                        "echo:event_main_5"
+                    ]
+                }
+            },
+            "echo:event_main_6": {
+                "add": {
+                    "component_groups": [
+                        "echo:event_main_6"
+                    ]
+                }
+            },
+            "echo:event_main_7": {
+                "add": {
+                    "component_groups": [
+                        "echo:event_main_7"
+                    ]
+                }
+            },
+            "echo:event_waiting_for_new_player": {
+                "add": {
+                    "component_groups": [
+                        "echo:event_waiting_for_new_player"
+                    ]
+                }
+            }
+        }
+    }
+}

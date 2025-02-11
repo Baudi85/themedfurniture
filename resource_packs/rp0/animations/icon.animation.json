@@ -1,0 +1,15 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.icon.rotate_and_bob": {
+			"loop": true,
+			"animation_length": 2.5,
+			"bones": {
+				"icon": {
+					"rotation": [0, "query.anim_time * 144", 0],
+					"position": [0, "Math.sin(query.anim_time * 144 ) * 3", 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:display_valentines_armoire",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/furniture/valentines/valentines_armoire"
+        },
+        "geometry": {
+          "default": "geometry.valentines_armoire"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "furniture_egg_valentines_armoire" }
+      }
+    }
+  }

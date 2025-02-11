@@ -1,0 +1,93 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:bike",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "spawn_egg": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+
+      "bike_blue": { "minecraft:skin_id": { "value": 0 } },
+      "bike_green": { "minecraft:skin_id": { "value": 1 } },
+      "bike_indigo": { "minecraft:skin_id": { "value": 2 } },
+      "bike_lime": { "minecraft:skin_id": { "value": 3 } },
+      "bike_magenta": { "minecraft:skin_id": { "value": 4 } },
+      "bike_orange": { "minecraft:skin_id": { "value": 5 } },
+      "bike_pink": { "minecraft:skin_id": { "value": 6 } },
+      "bike_purple": { "minecraft:skin_id": { "value": 7 } },
+      "bike_red": { "minecraft:skin_id": { "value": 8 } },
+      "bike_teal": { "minecraft:skin_id": { "value": 9 } },
+      "bike_yellow": { "minecraft:skin_id": { "value": 10 } }
+
+    },
+    "components": {
+      "minecraft:type_family": { 
+        "family": [ "custom", "vehicle" ]
+      },
+      "minecraft:health": {
+        "value": 15,
+        "max": 15
+      },
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 0.3
+      },
+      "minecraft:can_power_jump": {},
+      "minecraft:horse.jump_strength": {
+        "value": {
+          "range_min": 0.4,
+          "range_max": 1.0
+        }
+      },
+      "minecraft:jump.static": {},
+
+      "minecraft:physics": {},
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:rideable": {
+				"seat_count": 1,
+				"crouching_skip_interact": true,
+				"family_types": [ "player" ],
+				"interact_text": "Drive",
+				"seats": [ { "position": [0, 0.75, -0.35] } ]
+			},
+      "minecraft:navigation.walk": {
+				"can_float": true,
+				"avoid_water": false
+			},
+      "minecraft:movement.basic": {},
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.09,
+          "range_max": 0.25
+        }
+      },
+      "minecraft:input_ground_controlled": {},
+      "minecraft:jump.static": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          { "weight": 1, "add": { "component_groups": [ "bike_blue" ] } },
+          { "weight": 1, "add": { "component_groups": [ "bike_green" ] } },
+          { "weight": 1, "add": { "component_groups": [ "bike_indigo" ] } },
+          { "weight": 1, "add": { "component_groups": [ "bike_lime" ] } },
+          { "weight": 1, "add": { "component_groups": [ "bike_magenta" ] } },
+          { "weight": 1, "add": { "component_groups": [ "bike_orange" ] } },
+          { "weight": 1, "add": { "component_groups": [ "bike_pink" ] } },
+          { "weight": 1, "add": { "component_groups": [ "bike_purple" ] } },
+          { "weight": 1, "add": { "component_groups": [ "bike_red" ] } },
+          { "weight": 1, "add": { "component_groups": [ "bike_teal" ] } },
+          { "weight": 1, "add": { "component_groups": [ "bike_yellow" ] } }
+        ]
+      }
+    }
+  }
+}

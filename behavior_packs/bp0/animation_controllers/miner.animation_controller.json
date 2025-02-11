@@ -1,0 +1,89 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.custom_miner": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "echo_event_main": "query.skin_id == 1"
+                        },
+                        {
+                            "echo_event_main_2": "query.skin_id == 2"
+                        },
+                        {
+                            "echo_event_main_3": "query.skin_id == 3"
+                        },
+                        {
+                            "echo_event_main_4": "query.skin_id == 4"
+                        },
+                        {
+                            "echo_event_trading": "query.skin_id == 5"
+                        }
+                    ]
+                },
+                "echo_event_main": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.notification @a ~ ~ ~",
+                        "@s echo:clear",
+                        "@s echo:main_2"
+                    ]
+                },
+                "echo_event_main_2": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.miner.did_you_see @a ~ ~ ~",
+                        "/say Hey you! Did you see that!?",
+                        "@s echo:clear",
+                        "@s echo:main_3"
+                    ]
+                },
+                "echo_event_main_3": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.miner.on_my_way @a ~ ~ ~",
+                        "/say I was on my way to meet billy across the bridge and the ground in front of me just collapsed! It goes down so deep...",
+                        "@s echo:clear",
+                        "@s echo:main_4"
+                    ]
+                },
+                "echo_event_main_4": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.miner.reckon_you_could @a ~ ~ ~",
+                        "/say Reckon you could get your hands on some minerals for me? I'll trade you.",
+                        "@s echo:clear",
+                        "@s echo:trading"
+                    ]
+                },
+                "echo_event_trading": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 5"
+                        }
+                    ],
+                    "on_entry": [
+                        "@s echo:clear"
+                    ]
+                }
+            }
+        }
+    }
+}

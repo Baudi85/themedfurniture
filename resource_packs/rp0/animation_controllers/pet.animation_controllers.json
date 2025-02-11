@@ -1,0 +1,47 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.pet.init" : {
+			"initial_state" : "default",
+			"states" : {
+				"default": {
+					"on_entry": [ "v.ambient_timer = 0;"]
+				}
+			}
+		},
+		"controller.animation.pet.ambient" : {
+			"initial_state" : "default",
+			"states" : {
+				"default": {
+					"on_entry": [ "v.ambient_timer = 0;"],
+					"transitions": [ { "ambient": "Math.random_integer(0, 250) == 2" } ]
+				},
+				"ambient": {
+					"on_entry": [ "v.ambient_timer = q.life_time;"],
+					"sound_effects": [ { "effect": "ambient" } ],
+					"transitions": [
+						{
+							"default": "q.all_animations_finished && (q.life_time > (v.ambient_timer + 20))"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.pet.sit" : {
+			"initial_state" : "default",
+			"states" : {
+				"default": {
+					"transitions": [ { "sitting": "q.is_sitting" } ]
+				},
+				"sitting": {
+					"sound_effects": [ { "effect": "sit" } ],
+					"transitions": [
+						{
+							"default": "!q.is_sitting"
+						}
+					]
+				}
+			}
+		}
+	}
+}

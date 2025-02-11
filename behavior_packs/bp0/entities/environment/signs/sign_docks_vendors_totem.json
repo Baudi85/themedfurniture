@@ -1,0 +1,36 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "custom:sign_docks_vendors_totem",
+        "is_spawnable": true,
+        "is_summonable": true,
+        "spawn_egg": true,
+        "is_experimental": false
+      },
+      "component_groups": {},
+      "components": {
+        "minecraft:type_family": { "family": [ "custom", "environment", "sign_docks_vendors" ] },
+        "minecraft:physics": {
+          "has_gravity": false,
+          "has_collision": false
+        },
+        "minecraft:damage_sensor": {
+          "triggers": {
+            "cause": "all",
+            "deals_damage": false
+          }
+        },
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": false
+        },
+        "minecraft:is_stackable": {},
+        "minecraft:collision_box": {
+          "width": 0,
+          "height": 0
+        }
+      },
+      "events": {}
+    }
+}

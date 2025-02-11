@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:tree_stump_birch_1",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/environment/tree_stump_birch_1"
+        },
+        "geometry": {
+          "default": "geometry.tree_stump_1"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "birch_stump_1" }
+      }
+    }
+  }

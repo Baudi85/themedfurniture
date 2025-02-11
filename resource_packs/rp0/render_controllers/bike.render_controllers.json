@@ -1,0 +1,28 @@
+{
+    "format_version":"1.8.0",
+    "render_controllers": {
+      "controller.render.bike": {
+        "arrays": {
+          "textures": {
+            "Array.skins": [
+              "Texture.bike_blue",
+              "Texture.bike_green",
+              "Texture.bike_indigo",
+              "Texture.bike_lime",
+              "Texture.bike_magenta",
+              "Texture.bike_orange",
+              "Texture.bike_pink",
+              "Texture.bike_purple",
+              "Texture.bike_red",
+              "Texture.bike_teal",
+              "Texture.bike_yellow"
+            ]
+          }
+        },
+        "geometry": "Geometry.default",
+        "materials": [ { "*": "Material.default" } ],
+        "textures": [ "Array.skins[q.skin_id]" ]
+      }
+    }
+  }
+  

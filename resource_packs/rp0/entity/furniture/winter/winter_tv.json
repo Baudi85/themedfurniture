@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:winter_tv",
+        "materials": {
+          "default": "entity_alphatest"
+        },
+        "textures": {
+          "default": "textures/custom/entity/furniture/winter/winter_tv"
+        },
+        "geometry": {
+          "default": "geometry.winter_tv"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "furniture_egg_winter_tv" }
+      }
+    }
+  }

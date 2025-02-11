@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.laptop.close": {
+			"anim_time_update": "query.all_animations_finished",
+			"animation_length": 0.24,
+			"bones": {
+				"bottom": {
+					"rotation": [0, 0, 0]
+				},
+				"top": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2333": [100, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.laptop.open": {
+			"animation_length": 0.2,
+			"bones": {
+				"top": {
+					"rotation": {
+						"0.0": [100, 0, 0],
+						"0.2": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

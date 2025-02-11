@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:penny",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/npcs/penny"
+        },
+        "geometry": {
+          "default": "geometry.dog"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "animations": {
+          "idle": "animation.dog.idle",
+          "walk": "animation.dog.idle",
+
+          "move": "controller.animation.generic.move"
+        },
+        "scripts": {
+          "animate": [
+            "move"
+          ]
+        }
+      }
+    }
+  }

@@ -1,0 +1,54 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:display_mars_purple_tall_floor_lamp",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "spawn_egg": true,
+      "is_experimental": false,
+      "animations": {
+        "toggle_lights": "controller.animation.furniture.toggle_lights"
+
+      },
+      "scripts": {
+        "animate": [
+          "toggle_lights"
+        ]
+      }
+    },
+    "component_groups": {
+      "reset": { "minecraft:skin_id": { "value": 0 } },
+      "toggle_lights": { "minecraft:skin_id": { "value": 13 } }
+    },
+    "components": {
+      "minecraft:interact": {
+        "interactions": [
+          { "on_interact": { "event": "toggle_lights" } }
+        ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+             { "cause": "all", "deals_damage": false }
+          ]
+      },
+      "minecraft:type_family": { "family": [ "display", "display_mars_purple" ] },
+      "minecraft:scale": { "value": 1 },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 2.0
+      },
+      "minecraft:breathable": {
+        "breathes_solids": true,
+        "breathes_lava": true,
+        "breathes_water": true,
+        "breathes_air": true
+      }
+    },
+    "events": {
+
+            "toggle_lights": { "add": { "component_groups": [ "toggle_lights" ] } },
+      "reset": { "add": { "component_groups": [ "reset" ] } }
+    }
+  }
+}

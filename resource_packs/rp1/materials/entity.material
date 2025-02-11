@@ -1,0 +1,21 @@
+{
+  "materials": {
+    "version": "1.0.0",
+
+  "arrow:entity_alphatest": {},
+  "bone:entity_alphatest": {},
+  "boots:entity_alphatest": {},
+  "bow:entity_alphatest": {},
+  "bowl:entity_alphatest": {},
+  "chestplate:entity_alphatest": {},
+  "cookie:entity_alphatest": {},
+  "crossbow:entity_alphatest": {},
+  "helmet:entity_alphatest": {},
+  "pants:entity_alphatest": {},
+  "paper:entity_alphatest": {},
+  "sword:entity_alphatest": {},
+  "throne:entity_alphatest": {},
+  "torch:entity_alphatest": {},
+  "water_bottle:entity_alphatest": {}
+  }
+}

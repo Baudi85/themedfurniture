@@ -1,0 +1,31 @@
+{
+  "format_version":"1.10.0",
+  "animation_controllers": {
+    "controller.animation.human.move": {
+      "states": {
+        "default": {
+          "animations": [
+            { "walk": "query.modified_move_speed" }
+          ]
+        }
+      }
+    },
+    "controller.animation.human.attack": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "attacking": "variable.attack_time >= 0.0" }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            "attack.rotations"
+          ],
+          "transitions": [
+            { "default": "variable.attack_time < 0.0" }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:pepper_the_shop_keeper",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/npcs/pepper_the_shop_keeper"
+        },
+        "geometry": {
+          "default": "geometry.panda"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "animations": {
+          "idle": "animation.panda.idle",
+          "walk": "animation.panda.idle",
+
+          "move": "controller.animation.generic.move"
+        },
+        "scripts": {
+          "animate": [
+            "move"
+          ]
+        }
+      }
+    }
+  }

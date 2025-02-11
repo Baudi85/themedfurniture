@@ -1,0 +1,19 @@
+{
+  "resource_pack_name": "tetrascape",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "paint_brush": {
+      "textures": [
+        "textures/items/paint_brush"
+      ]
+    },
+
+    "display_only_converter": { "textures": [ "textures/custom/items/display_only_converter" ] },
+    "rotator": { "textures": [ "textures/custom/items/rotator" ] },
+    "despawner": {"textures": [ "textures/custom/items/despawner"] },
+    "shifter": {"textures": [ "textures/custom/items/shifter"] },
+    "center": {"textures": [ "textures/custom/items/center"] },
+    "mover": {"textures": [ "textures/custom/items/mover"] },
+    "color_cycler": {"textures": [ "textures/custom/items/color_cycler"] }
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:mermaid_plant",
+        "materials": {
+          "default": "entity_alphatest"
+        },
+        "textures": {
+          "default": "textures/custom/entity/furniture/mermaid/mermaid_plant"
+        },
+        "geometry": {
+          "default": "geometry.mermaid_plant"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "furniture_egg_mermaid_plant" }
+      }
+    }
+  }

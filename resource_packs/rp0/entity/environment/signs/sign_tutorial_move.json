@@ -1,0 +1,24 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:sign_tutorial_move",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/environment/signs/sign_tutorial_move"
+        },
+        "geometry": {
+          "default": "geometry.sign_tutorial"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": {
+          "base_color": "#8c1ab9",
+          "overlay_color": "#ffffff"
+        }
+      }
+    }
+  }

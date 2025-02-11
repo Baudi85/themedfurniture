@@ -1,0 +1,1 @@
+execute @e[family=display_environment] ~ ~ ~ summon custom:display_target

@@ -1,0 +1,31 @@
+{
+  "format_version":"1.10.0",
+  "animation_controllers": {
+    "controller.animation.laptop": {
+      "initial_State": "open",
+      "states": {
+        "open": {
+          "animations": [
+            "open"
+          ],
+          "transitions": [
+            {
+              "close": "query.variant == 0"
+            }
+          ]
+        },
+        "close": {
+          "animations": [
+            "close"
+          ],
+          "transitions": [
+            {
+              "open": "query.variant == 1"
+            }
+          ]
+        }
+
+      }
+    }
+  }
+}

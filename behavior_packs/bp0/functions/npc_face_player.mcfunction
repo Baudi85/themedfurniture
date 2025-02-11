@@ -1,0 +1,1 @@
+execute @e[type=npc] ~ ~ ~ tp @s ~ ~ ~ facing @p

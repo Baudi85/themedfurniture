@@ -1,0 +1,1 @@
+execute @e[tag=moving] ~ ~ ~ execute @p[tag=holding_move_tool,r=6] ~ ~ ~ tp @e[tag=moving,c=1] ^ ^1 ^2.75

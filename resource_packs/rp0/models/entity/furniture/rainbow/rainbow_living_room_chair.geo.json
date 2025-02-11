@@ -1,0 +1,43 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.rainbow_living_room_chair",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "living_room_chair_rainbow",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [4, 0, -5], "size": [1, 3, 1], "pivot": [4.5, 3, -4.5], "rotation": [-7.5, 0, -7.5], "uv": [0, 19]},
+						{"origin": [4, 0, 5.6], "size": [1, 7, 1], "pivot": [4.5, 3, 6.1], "rotation": [7.5, 0, -7.5], "uv": [29, 7]},
+						{"origin": [-5, 0, -5], "size": [1, 3, 1], "pivot": [-4.5, 3, -4.5], "rotation": [-7.5, 0, 7.5], "uv": [0, 0]},
+						{"origin": [-5, 0, 5.6], "size": [1, 7, 1], "pivot": [-4.5, 3, 6.1], "rotation": [7.5, 0, 7.5], "uv": [26, 0]}
+					]
+				},
+				{
+					"name": "root",
+					"parent": "living_room_chair_rainbow",
+					"pivot": [4.0883, 6.5, 9.13126],
+					"rotation": [0, -7.5, 90],
+					"cubes": [
+						{"origin": [-1.64408, -4.6, -7.3267], "size": [8, 14, 5], "uv": [0, 0]},
+						{"origin": [-2.45725, -4.6, -1.96788], "size": [8, 14, 4], "pivot": [8, 6, 2.5], "rotation": [0, -10, 0], "uv": [40, 47]},
+						{"origin": [-0.56042, -4.6, -11.56813], "size": [8, 14, 4], "pivot": [8, 6, -2.5], "rotation": [0, 12.5, 0], "uv": [0, 47]},
+						{"origin": [-4.22448, -4.6, 2.75957], "size": [8, 14, 4], "pivot": [7.30541, 6, 6.43923], "rotation": [0, -25, 0], "uv": [44, 29]},
+						{"origin": [-6.62771, -4.6, 7.23604], "size": [8, 14, 4], "pivot": [5.61493, 6, 10.06446], "rotation": [0, -37.5, 0], "uv": [44, 0]},
+						{"origin": [-9.57437, -4.6, 11.39477], "size": [8, 14, 4], "pivot": [3.17989, 6, 13.23788], "rotation": [0, -50, 0], "uv": [20, 33]},
+						{"origin": [-12.95358, -4.6, 15.25921], "size": [8, 14, 4], "pivot": [0.11571, 6, 15.80903], "rotation": [0, -65, 0], "uv": [24, 15]},
+						{"origin": [-16.57765, -4.6, 18.05991], "size": [8, 14, 4], "pivot": [-3.50952, 6, 17.4995], "rotation": [0, -77.5, 0], "uv": [0, 19]}
+					]
+				}
+			]
+		}
+	]
+}

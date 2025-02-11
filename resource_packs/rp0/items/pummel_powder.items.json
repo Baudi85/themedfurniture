@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "custom:pummel_powder",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "pummel_powder",
+      "minecraft:use_animation": "eat"
+    }
+  }
+}

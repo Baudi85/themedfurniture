@@ -1,0 +1,1 @@
+execute @e[family=display_mars_purple] ~ ~ ~ summon custom:display_target

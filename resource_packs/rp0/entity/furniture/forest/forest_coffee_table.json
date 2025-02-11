@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:forest_coffee_table",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/furniture/forest/forest_coffee_table"
+        },
+        "geometry": {
+          "default": "geometry.forest_coffee_table"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "furniture_egg_forest_coffee_table" }
+      }
+    }
+  }

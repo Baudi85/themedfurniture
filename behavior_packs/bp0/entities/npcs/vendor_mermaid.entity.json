@@ -1,0 +1,62 @@
+{
+  "format_version": "1.17.40",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:vendor_mermaid",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "load_area": "controller.animation.vendor.load_area"
+      },
+      "scripts": {
+        "animate": [
+          "load_area"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:type_family": { "family": [ "custom", "npc", "vendor" ] },
+      "minecraft:scale": { "value": 1 },
+      "minecraft:physics": {},
+      "minecraft:collision_box": {
+        "height": 2,
+        "width": 1
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:behavior.look_at_player": {
+        "look_distance": 64,
+        "priority": 0,
+        "probability": 1,
+        "look_time": [
+          64,
+          64
+        ]
+      },
+      "minecraft:movement": {},
+      "minecraft:trade_table": {
+        "display_name": "entity.mermaid.trade_table_name",
+        "table": "trading/vendors/mermaid.trading.json",
+        "new_screen": true 
+      }
+    },
+    "component_groups": {
+      "load_display": { "minecraft:is_stunned": {} }
+    },
+    "events": {
+      "load_display": { "add": { "component_groups": [ "load_display" ] } },
+      "unload_display": { "remove": { "component_groups": [ "load_display" ] } }
+    }
+  }
+}

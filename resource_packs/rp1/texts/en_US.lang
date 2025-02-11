@@ -1,0 +1,65 @@
+pack.name=Themed Furniture Base RP
+pack.description=The base resource pack for all things Tetrascape.
+
+entity.ts:arrow.name=Arrow
+item.spawn_egg.entity.ts:arrow.name=Spawn Arrow
+entity.ts:bone.name=Bone
+item.spawn_egg.entity.ts:bone.name=Spawn Bone
+entity.ts:boots.name=Boots
+item.spawn_egg.entity.ts:boots.name=Spawn Boots
+entity.ts:bow.name=Bow
+item.spawn_egg.entity.ts:bow.name=Spawn Bow
+entity.ts:bowl.name=Bowl
+item.spawn_egg.entity.ts:bowl.name=Spawn Bowl
+entity.ts:chestplate.name=Chestplate
+item.spawn_egg.entity.ts:chestplate.name=Spawn Chestplate
+entity.ts:cookie.name=Cookie
+item.spawn_egg.entity.ts:cookie.name=Spawn Cookie
+entity.ts:crossbow.name=Crossbow
+item.spawn_egg.entity.ts:crossbow.name=Spawn Crossbow
+entity.ts:helmet.name=Helmet
+item.spawn_egg.entity.ts:helmet.name=Spawn Helmet
+entity.ts:pants.name=Pants
+item.spawn_egg.entity.ts:pants.name=Spawn Pants
+entity.ts:paper.name=Paper
+item.spawn_egg.entity.ts:paper.name=Spawn Paper
+entity.ts:sword.name=Sword
+item.spawn_egg.entity.ts:sword.name=Spawn Sword
+entity.ts:throne.name=Throne
+item.spawn_egg.entity.ts:throne.name=Spawn Throne
+entity.ts:torch.name=Torch
+item.spawn_egg.entity.ts:torch.name=Spawn Torch
+entity.ts:water_bottle.name=Water Bottle
+item.spawn_egg.entity.ts:water_bottle.name=Spawn Water Bottle
+entity.ts:laptop.name=Laptop
+item.spawn_egg.entity.ts:laptop.name=Spawn Laptop
+
+entity.ts:billboard_twitter.name=Twitter Billboard
+item.spawn_egg.entity.ts:billboard_twitter.name=Spawn Twitter Billboard
+entity.ts:billboard_instagram.name=Instagram Billboard
+item.spawn_egg.entity.ts:billboard_instagram.name=Spawn Instagram Billboard
+entity.ts:billboard_facebook.name=Facebook Billboard
+item.spawn_egg.entity.ts:billboard_facebook.name=Spawn Facebook Billboard
+
+entity.ts:path_orb.name=Path Orb
+item.spawn_egg.entity.ts:path_orb.name=Spawn Path Orb
+
+entity.ts:selector.name=Selector
+item.spawn_egg.entity.ts:selector.name=Spawn Selector
+entity.ts:selector_b.name=Selector B
+item.spawn_egg.entity.ts:selector_b.name=Spawn Selector B
+entity.ts:selector_c.name=Selector C
+item.spawn_egg.entity.ts:selector_c.name=Spawn Selector C
+entity.ts:selector_d.name=Selector D
+item.spawn_egg.entity.ts:selector_d.name=Spawn Selector D
+entity.ts:selector_e.name=Selector E
+item.spawn_egg.entity.ts:selector_e.name=Spawn Selector E
+
+
+##### FURNITURE TOOLS #####
+item.custom:display_only_converter.name=§aDisplay Only Converter
+item.custom:shifter.name=§aShifter
+item.custom:move_tool.name=§aMove tool
+item.custom:center_tool.name=§aCenter tool
+item.custom:despawner.name=§aDespawner
+item.custom:rotator.name=§aRotator

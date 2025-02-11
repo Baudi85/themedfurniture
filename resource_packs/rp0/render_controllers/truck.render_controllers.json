@@ -1,0 +1,28 @@
+{
+    "format_version":"1.8.0",
+    "render_controllers": {
+      "controller.render.truck": {
+        "arrays": {
+          "textures": {
+            "Array.skins": [
+              "Texture.truck_blue",
+              "Texture.truck_green",
+              "Texture.truck_indigo",
+              "Texture.truck_lime",
+              "Texture.truck_magenta",
+              "Texture.truck_orange",
+              "Texture.truck_pink",
+              "Texture.truck_purple",
+              "Texture.truck_red",
+              "Texture.truck_teal",
+              "Texture.truck_yellow"
+            ]
+          }
+        },
+        "geometry": "Geometry.default",
+        "materials": [ { "*": "Material.default" } ],
+        "textures": [ "Array.skins[q.skin_id]" ]
+      }
+    }
+  }
+  

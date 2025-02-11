@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:display_mermaid_love_seat",
+        "materials": {
+          "default": "entity_alphatest"
+        },
+        "textures": {
+          "default": "textures/custom/entity/furniture/mermaid/mermaid_love_seat"
+        },
+        "geometry": {
+          "default": "geometry.mermaid_love_seat"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "furniture_egg_mermaid_love_seat" }
+      }
+    }
+  }

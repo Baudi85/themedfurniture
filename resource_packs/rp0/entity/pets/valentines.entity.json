@@ -1,0 +1,42 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:chibi_valentines",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/pets/valentines"
+        },
+        "geometry": {
+          "default": "geometry.chibi_teddy_bear"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "chibi_egg_valentines" },
+        "animations": {
+          "walk": "animation.chibi_teddy_bear.walk",
+          "idle": "animation.chibi_teddy_bear.idle",
+          "sit": "animation.chibi_teddy_bear.sit",
+
+          "move_sittable": "controller.animation.generic.move_sittable",
+          "sit_sound_controller": "controller.animation.pet.sit",
+          "ambient_sound_controller": "controller.animation.pet.ambient",
+          "init": "controller.animation.pet.init"
+        },
+        "scripts": {
+          "animate": [
+            "move_sittable",
+            "sit_sound_controller",
+            "ambient_sound_controller"
+          ]
+        },
+        "sound_effects": {
+          "sit": "custom.pets.teddy_bear.sit",
+          "ambient": "custom.pets.teddy_bear.ambient"
+        }
+      }
+    }
+  }

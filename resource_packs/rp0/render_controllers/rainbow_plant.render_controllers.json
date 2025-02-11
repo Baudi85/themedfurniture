@@ -1,0 +1,16 @@
+{
+    "format_version":"1.8.0",
+    "render_controllers": {
+      "controller.render.rainbow_plant": {
+        "geometry": "Geometry.default",
+        "materials": [
+          { "bouquet_of_flowers": "Material.opaque" },
+          { "flowers": "Material.opaque" },
+          { "glass": "Material.translucent" },
+          { "water": "Material.opaque" }
+        ],
+        "textures": [ "Texture.default" ]
+      }
+    }
+  }
+  

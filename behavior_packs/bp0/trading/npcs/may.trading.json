@@ -1,0 +1,98 @@
+{
+    "tiers": [
+        {
+            "trades": [
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:rock_1" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:rock_2" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:rock_3" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:rock_4" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:rock_5" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:rock_6" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:rock_7" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:rock_8" } ]  } ],
+                    "max_uses": -1
+                },
+
+
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:tree_stump_birch_1" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:tree_stump_birch_2" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:tree_stump_birch_3" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:tree_stump_oak_1" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:tree_stump_oak_2" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:tree_stump_oak_3" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:tree_stump_spruce_1" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:tree_stump_spruce_2" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:tree_stump_spruce_3" } ]  } ],
+                    "max_uses": -1
+                }
+            ]
+        }
+    ]
+}
+
+
+

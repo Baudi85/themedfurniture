@@ -1,0 +1,168 @@
+{
+    "tiers": [
+        {
+            "trades": [
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "custom:decoration_gold", "quantity": 30 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:chibi_gold" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "custom:chibi_food" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_armoire" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_beach_lounger" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_bed" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_chair_0" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_chair_1" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_couch_2" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_couch" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_dresser" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_fat_chair" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_living_room_chair" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_lounge_chair" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_lounge_footrest" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_night_stand" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_tall_palm" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_orchid" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_side_table" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_table_0" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_table_lamp" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_tall_floor_lamp" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_tall_palm" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_tv" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:gold_wiry_coffee_table" } ]  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 5 } ],
+                    "gives": [ { "item": "minecraft:painting"  } ],
+                    "max_uses": -1
+                },
+
+
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:center_tool" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:despawner" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:move_tool" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:rotator" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:shifter" } ],
+                    "max_uses": -1
+                }
+
+                
+
+            ]
+        }
+    ]
+}

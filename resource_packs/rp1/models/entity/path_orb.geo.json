@@ -1,0 +1,32 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.path_orb",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "inner",
+					"pivot": [0, 0.5, 0],
+					"cubes": [
+						{"origin": [-0.9, -0.4, -0.9], "size": [1.8, 1.8, 1.8], "inflate": -0.5, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "outer",
+					"pivot": [0, 0.5, 0],
+					"rotation": [-45, -5, 35],
+					"cubes": [
+						{"origin": [-0.75, -0.25, -0.75], "size": [1.5, 1.5, 1.5], "uv": [0, 11]}
+					]
+				}
+			]
+		}
+	]
+}

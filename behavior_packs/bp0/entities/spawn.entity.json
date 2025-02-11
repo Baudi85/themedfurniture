@@ -1,0 +1,25 @@
+{
+  "format_version": "1.17.40",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:spawn",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "all",
+              "deals_damage": false
+            }
+          ]
+        },
+        "minecraft:collision_box": {
+            "height": 0,
+            "width": 0
+        }
+    }
+  }
+}

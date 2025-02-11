@@ -1,0 +1,22 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:display_rainbow_plant",
+        "materials": {
+          "opaque": "entity_alphatest",
+          "translucent": "entity_alphablend"
+        },
+        "textures": {
+          "default": "textures/custom/entity/furniture/rainbow/rainbow_plant"
+        },
+        "geometry": {
+          "default": "geometry.rainbow_plant"
+        },
+        "render_controllers": [
+          "controller.render.rainbow_plant"
+        ],
+        "spawn_egg": { "texture": "furniture_egg_rainbow_plant" }
+      }
+    }
+  }

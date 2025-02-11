@@ -1,0 +1,28 @@
+{
+    "tiers": [
+        {
+            "trades": [
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "gives": [ { "item": "custom:coffee" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 5 } ],
+                    "gives": [ { "item": "custom:espresso" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 5 } ],
+                    "gives": [ { "item": "custom:slime_slurp" } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 5 } ],
+                    "gives": [ { "item": "custom:pummel_powder" } ],
+                    "max_uses": -1
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+execute @e[family=display_mermaid] ~ ~ ~ summon custom:display_target

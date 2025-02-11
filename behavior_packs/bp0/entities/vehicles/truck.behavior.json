@@ -1,0 +1,88 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:truck",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "spawn_egg": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+
+      "truck_blue": { "minecraft:skin_id": { "value": 0 } },
+      "truck_green": { "minecraft:skin_id": { "value": 1 } },
+      "truck_indigo": { "minecraft:skin_id": { "value": 2 } },
+      "truck_lime": { "minecraft:skin_id": { "value": 3 } },
+      "truck_magenta": { "minecraft:skin_id": { "value": 4 } },
+      "truck_orange": { "minecraft:skin_id": { "value": 5 } },
+      "truck_pink": { "minecraft:skin_id": { "value": 6 } },
+      "truck_purple": { "minecraft:skin_id": { "value": 7 } },
+      "truck_red": { "minecraft:skin_id": { "value": 8 } },
+      "truck_teal": { "minecraft:skin_id": { "value": 9 } },
+      "truck_yellow": { "minecraft:skin_id": { "value": 10 } }
+
+    },
+    "components": {
+      "minecraft:type_family": { 
+        "family": [ "custom", "vehicle" ]
+      },
+      "minecraft:health": {
+        "value": 15,
+        "max": 15
+      },
+      "minecraft:collision_box": {
+        "width": 1.5,
+        "height": 2.0
+      },
+
+      "minecraft:physics": {},
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:rideable": {
+				"seat_count": 2,
+				"crouching_skip_interact": true,
+				"family_types": [ "player" ],
+				"interact_text": "Drive",
+				"seats": [
+          { "position": [0.65, 0.6, -0.55] },
+          { "position": [-0.65, 0.6, -0.55] }
+        ]
+			},
+      "minecraft:navigation.walk": {
+				"can_float": true,
+				"avoid_water": false
+			},
+      "minecraft:movement.basic": {},
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.12,
+          "range_max": 0.55
+        }
+      },
+      "minecraft:input_ground_controlled": {},
+      "minecraft:jump.static": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          { "weight": 1, "add": { "component_groups": [ "truck_blue" ] } },
+          { "weight": 1, "add": { "component_groups": [ "truck_green" ] } },
+          { "weight": 1, "add": { "component_groups": [ "truck_indigo" ] } },
+          { "weight": 1, "add": { "component_groups": [ "truck_lime" ] } },
+          { "weight": 1, "add": { "component_groups": [ "truck_magenta" ] } },
+          { "weight": 1, "add": { "component_groups": [ "truck_orange" ] } },
+          { "weight": 1, "add": { "component_groups": [ "truck_pink" ] } },
+          { "weight": 1, "add": { "component_groups": [ "truck_purple" ] } },
+          { "weight": 1, "add": { "component_groups": [ "truck_red" ] } },
+          { "weight": 1, "add": { "component_groups": [ "truck_teal" ] } },
+          { "weight": 1, "add": { "component_groups": [ "truck_yellow" ] } }
+        ]
+      }
+    }
+  }
+}

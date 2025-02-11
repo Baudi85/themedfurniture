@@ -1,0 +1,30 @@
+{
+    "format_version":"1.8.0",
+    "render_controllers": {
+      "controller.render.convertible": {
+        "arrays": {
+          "textures": {
+            "Array.skins": [
+              "Texture.convertible_blue",
+              "Texture.convertible_green",
+              "Texture.convertible_indigo",
+              "Texture.convertible_light_blue",
+              "Texture.convertible_light_pink",
+              "Texture.convertible_lime",
+              "Texture.convertible_magenta",
+              "Texture.convertible_orange",
+              "Texture.convertible_pink",
+              "Texture.convertible_purple",
+              "Texture.convertible_red",
+              "Texture.convertible_teal",
+              "Texture.convertible_yellow"
+            ]
+          }
+        },
+        "geometry": "Geometry.default",
+        "materials": [ { "*": "Material.default" } ],
+        "textures": [ "Array.skins[q.skin_id]" ]
+      }
+    }
+  }
+  

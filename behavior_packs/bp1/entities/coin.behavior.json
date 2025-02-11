@@ -1,0 +1,27 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ts:coin",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "spawn_egg": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "despawn": {
+  		  "minecraft:despawn": {}
+  	  }
+    },
+    "components": {
+      "minecraft:scale": {
+        "value": 0.75
+      },
+      "minecraft:physics": {
+        "has_gravity": false
+      }
+    },
+    "events": {
+    }
+  }
+}

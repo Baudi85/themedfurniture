@@ -1,0 +1,41 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.rainbow_dining_chair",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "dining_chair_rainbow",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-5, 8, 3], "size": [10, 4, 2], "uv": [0, 22]},
+						{"origin": [-5, 12, 3], "size": [10, 4, 2], "pivot": [-5, 12, 3], "rotation": [-12.5, 0, 0], "uv": [0, 16]},
+						{"origin": [-5, 15.90518, 3.86576], "size": [10, 4, 2], "pivot": [-5, 15.90518, 3.86576], "rotation": [-27.5, 0, 0], "uv": [0, 10]},
+						{"origin": [-5, 19.45323, 5.71275], "size": [10, 3, 2], "pivot": [-5, 19.45323, 5.71275], "rotation": [-50, 0, 0], "uv": [24, 10]},
+						{"origin": [-5, 6, -3], "size": [10, 2, 8], "uv": [0, 0]},
+						{"origin": [-1, 6, -6.64], "size": [2, 2, 4], "uv": [0, 28]},
+						{"origin": [-5, 6, -3], "size": [2, 2, 2], "pivot": [-5, 9, -3], "rotation": [0, 70, 0], "uv": [34, 26]},
+						{"origin": [-4.31596, 6, -4.87939], "size": [2, 2, 4], "pivot": [-4.31596, 9, -4.87939], "rotation": [0, 37.5, 0], "uv": [20, 24]},
+						{"origin": [-2.72925, 6, -6.09691], "size": [1.82, 2, 3], "pivot": [-2.72925, 9, -6.09691], "rotation": [0, 17.5, 0], "uv": [28, 31]},
+						{"origin": [3, 6, -3], "size": [2, 2, 2], "pivot": [5, 9, -3], "rotation": [0, -70, 0], "uv": [0, 34]},
+						{"origin": [2.31596, 6, -4.87939], "size": [2, 2, 4], "pivot": [4.31596, 9, -4.87939], "rotation": [0, -37.5, 0], "uv": [22, 18]},
+						{"origin": [0.90925, 6, -6.09691], "size": [1.82, 2, 3], "pivot": [2.72925, 9, -6.09691], "rotation": [0, -17.5, 0], "uv": [31, 21]},
+						{"origin": [-4, 0, -4], "size": [2, 6, 2], "uv": [20, 30]},
+						{"origin": [2, 0, -4], "size": [2, 6, 2], "uv": [12, 28]},
+						{"origin": [2.5, 2.5, -2], "size": [1, 1, 4], "uv": [30, 15]},
+						{"origin": [-3.5, 2.5, -2], "size": [1, 1, 4], "uv": [28, 26]},
+						{"origin": [2, 0, 2], "size": [2, 6, 2], "uv": [28, 0]},
+						{"origin": [-4, 0, 2], "size": [2, 6, 2], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

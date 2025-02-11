@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ts:water_bottle",
+      "materials": {
+        "default": "water_bottle"
+      },
+      "textures": {
+        "default": "textures/entity/water_bottle/water_bottle"
+      },
+      "geometry": {
+        "default": "geometry.water_bottle"
+      },
+      "render_controllers": [
+        "controller.render.water_bottle"
+      ],
+      "spawn_egg": {
+        "base_color": "#8b74a7",
+        "overlay_color": "26ba4e"
+      }
+    }
+  }
+}

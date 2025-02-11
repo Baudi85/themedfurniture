@@ -1,0 +1,1 @@
+execute @e[family=display_zen] ~ ~ ~ summon custom:display_target

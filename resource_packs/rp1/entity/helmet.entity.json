@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ts:helmet",
+      "materials": {
+        "default": "helmet"
+      },
+      "textures": {
+        "default": "textures/entity/helmet/leather"
+      },
+      "geometry": {
+        "default": "geometry.helmet"
+      },
+      "render_controllers": [
+        "controller.render.helmet"
+      ],
+      "spawn_egg": {
+        "base_color": "#8b74a7",
+        "overlay_color": "26ba4e"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.may.display_loader": {
+            "states": {
+                "default": {
+                    "transitions": [ // applied via function display/vendor_tick
+                        { "pre_unloaded": "!q.is_stunned" },
+                        { "pre_loaded": "q.is_stunned" }
+                    ] 
+                },
+                "pre_unloaded": { "transitions": [ { "load_area": "q.is_stunned" } ] },
+                "pre_loaded": {
+                    "on_exit": [ // This should be exactly the same as load_area on_exit below
+                        "/function display/environment_empty_1",
+                        "/function display/environment_empty_2",
+                        "/function display/environment_empty_3"
+                    ],
+                    "transitions": [ { "default": "!q.is_stunned" } ]
+                },
+
+                "load_area": {
+                    "on_entry": [
+                        "/function display/environment",
+                        "/execute @e[type=custom:display_target,x=1101,y=67,z=-1083,dx=13,dy=2,dz=6] ~ ~ ~ tp @e[family=display,r=1,c=1] ~ ~ ~ facing ^ ^ ^3",
+                        "/tp @e[type=custom:display_target,x=1101,y=67,z=-1083,dx=13,dy=2,dz=6] 0 0 0",
+
+                        "/kill @e[x=0,y=0,z=0,r=1]"
+                    ],
+                    "on_exit": [
+                        "/function display/environment_empty_1",
+                        "/function display/environment_empty_2",
+                        "/function display/environment_empty_3"
+                    ],
+                    "transitions": [ { "default": "!q.is_stunned" } ]
+                }
+            }
+        }
+    }
+}

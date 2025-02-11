@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ts:path_orb",
+      "materials": {
+        "outer": "slime_outer",
+        "inner": "slime"
+      },
+      "textures": {
+        "default": "textures/entity/path_orb"
+      },
+      "geometry": {
+        "default": "geometry.path_orb"
+      },
+      "render_controllers": [
+        "controller.render.path_orb"
+      ],
+      "particle_effects": {
+        "particle": "ts:path_orb"
+      },
+      "animations": {
+        "rotate": "animation.path_orb.rotating",
+        "particles": "controller.animation.path_orb.particles"
+      },
+      "scripts": {
+        "animate": [
+          "rotate",
+          "particles"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#8b32a7",
+        "overlay_color": "#9cba4e"
+      }
+    }
+  }
+}

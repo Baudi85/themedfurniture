@@ -1,0 +1,31 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:display_rock_3",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "spawn_egg": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+    },
+    "components": {
+      "minecraft:type_family": { "family": [ "display", "display_environment", "display_rock" ] },
+      "minecraft:damage_sensor": {
+        "triggers": [
+           {
+          "cause": "all",
+          "deals_damage": false
+            }
+          ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.0,
+        "height": 0.0
+      }
+    },
+    "events": {
+    }
+  }
+}

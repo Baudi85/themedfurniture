@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ts:placeable_arrow",
+      "materials": {
+        "default": "arrow"
+      },
+      "textures": {
+        "default": "textures/entity/placeable_items/placeable_arrow"
+      },
+      "geometry": {
+        "default": "geometry.placeable_arrow"
+      },
+      "render_controllers": [
+        "controller.render.placeable_arrow"
+      ],
+      "spawn_egg": {
+        "base_color": "#8b74a7",
+        "overlay_color": "26ba4e"
+      }
+    }
+  }
+}

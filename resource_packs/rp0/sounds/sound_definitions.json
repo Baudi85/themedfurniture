@@ -1,0 +1,653 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    
+    "custom.tools.rotate": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/custom/tools/rotate"
+        }
+      ]
+    },
+    "custom.tools.despawner": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/custom/tools/despawner"
+        }
+      ]
+    },
+    "custom.tools.move": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/custom/tools/move"
+        }
+      ]
+    },
+    "custom.tools.shift": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/custom/tools/shift"
+        }
+      ]
+    },
+    "custom.tools.center": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/custom/tools/center"
+        }
+      ]
+    },
+    "custom.tools.toggle_lights": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/custom/tools/toggle_lights"
+        }
+      ]
+    },
+    
+    "custom.effects.earthquake": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "load_on_low_memory": false,
+          "name": "sounds/custom/effects/earthquake"
+        }
+      ]
+    },
+    
+    
+    
+    "custom.speech.npc.notification": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/notification" } ]
+    },
+    
+    "custom.speech.npc.pickles.on_my_way": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/pickles/on_my_way" } ]
+    },
+    "custom.speech.npc.pickles.did_you_see": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/pickles/did_you_see" } ]
+    },
+    "custom.speech.npc.pickles.reckon_you_could": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/pickles/reckon_you_could" } ]
+    },
+    "custom.speech.npc.pickles.be_careful_with": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/pickles/be_careful_with" } ]
+    },
+    
+    
+    
+    "custom.speech.npc.juniper.hello_welcome": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/juniper/hello_welcome" } ]
+    },
+    "custom.speech.npc.juniper.we_have_11": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/juniper/we_have_11" } ]
+    },
+    "custom.speech.npc.juniper.i_hope_you": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/juniper/i_hope_you" } ]
+    },
+    
+    
+    "custom.speech.npc.bonnie.i_see_you": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/bonnie/i_see_you" } ]
+    },
+    "custom.speech.npc.bonnie.you_look_strong": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/bonnie/you_look_strong" } ]
+    },
+    "custom.speech.npc.bonnie.bring_me_back": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/bonnie/bring_me_back" } ]
+    },
+    "custom.speech.npc.bonnie.if_you_need": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/bonnie/if_you_need" } ]
+    },
+    
+    
+    "custom.speech.npc.chuck.welcome_to_our": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/chuck/welcome_to_our" } ]
+    },
+    "custom.speech.npc.chuck.im_the_park": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/chuck/im_the_park" } ]
+    },
+    "custom.speech.npc.chuck.im_also_interested": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/chuck/im_also_interested" } ]
+    },
+    
+    
+    
+    "custom.speech.npc.start_tutorial.welcome_to_themed": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/start_tutorial/welcome_to_themed" } ]
+    },
+    "custom.speech.npc.start_tutorial.would_you_like": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/start_tutorial/would_you_like" } ]
+    },
+    "custom.speech.npc.start_tutorial.interact_with_me": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/start_tutorial/interact_with_me" } ]
+    },
+    
+    "custom.speech.npc.despawner.this_is_the": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/despawner/this_is_the" } ]
+    },
+    "custom.speech.npc.despawner.right_click_to": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/despawner/right_click_to" } ]
+    },
+    "custom.speech.npc.despawner.left_click_to": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/despawner/left_click_to" } ]
+    },
+    
+    "custom.speech.npc.center.right_click_to": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/center/right_click_to" } ]
+    },
+    "custom.speech.npc.center.left_click_to": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/center/left_click_to" } ]
+    },
+    
+    "custom.speech.npc.rotate.right_click_to": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/rotate/right_click_to" } ]
+    },
+    "custom.speech.npc.rotate.left_click_to": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/rotate/left_click_to" } ]
+    },
+    
+    "custom.speech.npc.shift.right_click_to": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/shift/right_click_to" } ]
+    },
+    "custom.speech.npc.shift.left_click_to": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/shift/left_click_to" } ]
+    },
+    
+    "custom.speech.npc.move.right_click_to": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/move/right_click_to" } ]
+    },
+    "custom.speech.npc.move.left_click_to": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/move/left_click_to" } ]
+    },
+    
+    "custom.speech.npc.lights.interact_with_me": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/lights/interact_with_me" } ]
+    },
+    "custom.speech.npc.lights.you_dont_need": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/lights/you_dont_need" } ]
+    },
+    
+    
+    "custom.speech.npc.sunny.hey_are_you": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/sunny/hey_are_you" } ]
+    },
+    "custom.speech.npc.sunny.that_was_quite": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/sunny/that_was_quite" } ]
+    },
+    "custom.speech.npc.sunny.anyways_as_i": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/sunny/anyways_as_i" } ]
+    },
+    "custom.speech.npc.sunny.theres_a_vendor": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/sunny/theres_a_vendor" } ]
+    },
+    "custom.speech.npc.sunny.here_are_some": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/sunny/here_are_some" } ]
+    },
+    "custom.speech.npc.sunny.oh_you_again": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/sunny/oh_you_again" } ]
+    },
+    
+    
+    "custom.speech.npc.jules.ever_since_the": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/jules/ever_since_the" } ]
+    },
+    "custom.speech.npc.jules.lucky_for_you": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/jules/lucky_for_you" } ]
+    },
+    "custom.speech.npc.jules.if_you_face": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/jules/if_you_face" } ]
+    },
+    "custom.speech.npc.jules.he_might_have": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/jules/he_might_have" } ]
+    },
+    
+    
+    "custom.speech.npc.may.looking_to_buy": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/may/looking_to_buy" } ]
+    },
+    
+    
+    "custom.speech.npc.lars.i_heard_lola": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/lars/i_heard_lola" } ]
+    },
+    "custom.speech.npc.lars.shes_just_past": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/lars/shes_just_past" } ]
+    },
+    
+    
+    "custom.speech.npc.kujo.hello_looking_for": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/kujo/hello_looking_for" } ]
+    },
+    
+    
+    "custom.speech.npc.lola.beautiful_view": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/lola/beautiful_view" } ]
+    },
+    "custom.speech.npc.lola.im_lola_the": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/lola/im_lola_the" } ]
+    },
+    "custom.speech.npc.lola.i_collect_fish": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/lola/i_collect_fish" } ]
+    },
+    
+    
+    "custom.speech.npc.mo.how_did_you": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/mo/how_did_you" } ]
+    },
+    "custom.speech.npc.mo.its_a_nice": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/mo/its_a_nice" } ]
+    },
+    "custom.speech.npc.mo.perhaps_youd_like": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/mo/perhaps_youd_like" } ]
+    },
+    
+    "custom.speech.npc.penny.interested_in_some": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/penny/interested_in_some" } ]
+    },
+    
+    
+    "custom.speech.npc.pepper.ahoy_interested_in": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/pepper/ahoy_interested_in" } ]
+    },
+    
+    
+    "custom.speech.npc.penelope.im_just_heading": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/npc/penelope/im_just_heading" } ]
+    },
+    
+    "music.game" : {
+      "__use_legacy_max_distance" : "true",
+      "category" : "music",
+      "sounds" : [
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/chill_lofi_hiphop",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/chillhop_lounge",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/chillhop_summer",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/daydream",
+          "stream" : true,
+          "volume" : 0.10
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/hiphop_study",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/indie_chillhop",
+          "stream" : true,
+          "volume" : 0.10
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/late_night_at_the_shop",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/lofi_chill_dreams",
+          "stream" : true,
+          "volume" : 0.30
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/lofi_chillhop",
+          "stream" : true,
+          "volume" : 0.30
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/rainy_city_chillhop",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/the_hotel",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/the_jazz",
+          "stream" : true,
+          "volume" : 0.20
+        }
+      ]
+    },
+    
+    "music.game.creative" : {
+      "__use_legacy_max_distance" : "true",
+      "category" : "music",
+      "sounds" : [
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/chill_lofi_hiphop",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/chillhop_lounge",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/chillhop_summer",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/daydream",
+          "stream" : true,
+          "volume" : 0.10
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/hiphop_study",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/indie_chillhop",
+          "stream" : true,
+          "volume" : 0.10
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/late_night_at_the_shop",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/lofi_chill_dreams",
+          "stream" : true,
+          "volume" : 0.30
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/lofi_chillhop",
+          "stream" : true,
+          "volume" : 0.30
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/rainy_city_chillhop",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/the_hotel",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/the_jazz",
+          "stream" : true,
+          "volume" : 0.20
+        }
+      ]
+    },
+    
+    "music.menu" : {
+      "__use_legacy_max_distance" : "true",
+      "category" : "music",
+      "sounds" : [
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/chill_lofi_hiphop",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/chillhop_lounge",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/chillhop_summer",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/daydream",
+          "stream" : true,
+          "volume" : 0.10
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/hiphop_study",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/indie_chillhop",
+          "stream" : true,
+          "volume" : 0.10
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/late_night_at_the_shop",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/lofi_chill_dreams",
+          "stream" : true,
+          "volume" : 0.30
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/lofi_chillhop",
+          "stream" : true,
+          "volume" : 0.30
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/rainy_city_chillhop",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/the_hotel",
+          "stream" : true,
+          "volume" : 0.20
+        },
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/custom/music/the_jazz",
+          "stream" : true,
+          "volume" : 0.20
+        }
+      ]
+    },
+    
+
+    "custom.pets.alien.ambient": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/alien" } ]
+    },
+    "custom.pets.alien.sit": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/alien_sit" } ]
+    },
+    "custom.pets.axolotl.ambient": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/axolotl" } ]
+    },
+    "custom.pets.axolotl.sit": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/axolotl_sit" } ]
+    },
+    "custom.pets.deer.ambient": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/deer" } ]
+    },
+    "custom.pets.deer.sit": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/deer_sit" } ]
+    },
+    "custom.pets.dragon.ambient": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/dragon" } ]
+    },
+    "custom.pets.dragon.sit": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/dragon_sit" } ]
+    },
+    "custom.pets.dragon_fruit.ambient": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/dragon_fruit" } ]
+    },
+    "custom.pets.dragon_fruit.sit": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/dragon_fruit_sit" } ]
+    },
+    "custom.pets.lion.ambient": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/lion" } ]
+    },
+    "custom.pets.lion.sit": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/lion_sit" } ]
+    },
+    "custom.pets.rock_golem.ambient": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/rock_golem" } ]
+    },
+    "custom.pets.rock_golem.sit": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/rock_golem_sit" } ]
+    },
+    "custom.pets.slime.ambient": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/slime" } ]
+    },
+    "custom.pets.slime.sit": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/slime_sit" } ]
+    },
+    "custom.pets.snow_golem.ambient": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/snow_golem" } ]
+    },
+    "custom.pets.snow_golem.sit": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/snow_golem_sit" } ]
+    },
+    "custom.pets.teddy_bear.ambient": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/teddy_bear" } ]
+    },
+    "custom.pets.teddy_bear.sit": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/teddy_bear_sit" } ]
+    },
+    "custom.pets.tiger.ambient": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/tiger" } ]
+    },
+    "custom.pets.tiger.sit": {
+      "category": "neutral",
+      "sounds": [ { "name": "sounds/custom/pets/tiger_sit" } ]
+    }
+    
+  }
+}

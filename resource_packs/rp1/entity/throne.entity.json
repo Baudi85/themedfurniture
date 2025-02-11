@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ts:throne",
+      "materials": {
+        "default": "throne"
+      },
+      "textures": {
+        "default": "textures/entity/throne/throne"
+      },
+      "geometry": {
+        "default": "geometry.throne"
+      },
+      "render_controllers": [
+        "controller.render.throne"
+      ],
+      "spawn_egg": {
+        "base_color": "#8b00a7",
+        "overlay_color": "9b004e"
+      }
+    }
+  }
+}

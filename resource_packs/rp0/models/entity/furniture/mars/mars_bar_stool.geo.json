@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mars_bar_stool",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bar_stool_mars",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-5.5, 11, -5], "size": [11, 2, 7], "uv": [0, 0]},
+						{"origin": [-5.5, 12, 2], "size": [11, 1, 2], "uv": [0, 18]},
+						{"origin": [-4.5, 11, 2], "size": [9, 1, 2], "uv": [20, 22]},
+						{"origin": [-5.5, 6, 1.8], "size": [1, 12, 2], "pivot": [-5.5, 11, 3.8], "rotation": [-47.5, 0, 0], "uv": [26, 25]},
+						{"origin": [-5.5, 7.58074, -3.40749], "size": [1, 5, 2], "pivot": [-5, 9.98074, -2.40749], "rotation": [47.5, 0, 0], "uv": [0, 0]},
+						{"origin": [4.5, 6.58074, -3.40749], "size": [1, 6, 2], "pivot": [5, 9.98074, -2.40749], "rotation": [47.5, 0, 0], "uv": [0, 9]},
+						{"origin": [-4.5, 16, 1.9], "size": [9, 2, 1.9], "pivot": [-5.5, 11, 3.8], "rotation": [-47.5, 0, 0], "uv": [0, 24]},
+						{"origin": [-5.5, 2.0966, -1.23757], "size": [1, 7, 2], "pivot": [-5.5, 9.0966, -1.23757], "rotation": [-32, 0, 0], "uv": [10, 27]},
+						{"origin": [-4.5, 2.0966, -1.23757], "size": [9, 1, 2], "pivot": [-5.5, 9.0966, -1.23757], "rotation": [-32, 0, 0], "uv": [0, 21]},
+						{"origin": [4.5, 2.0966, -1.23757], "size": [1, 7, 2], "pivot": [5.5, 9.0966, -1.23757], "rotation": [-32, 0, 0], "uv": [4, 27]},
+						{"origin": [4.5, 6, 1.9], "size": [1, 12, 1.9], "pivot": [5.5, 11, 3.8], "rotation": [-47.5, 0, 0], "uv": [0, 27]},
+						{"origin": [-1, 1, -1], "size": [2, 10, 2], "uv": [18, 25]},
+						{"origin": [-4, 0, -4], "size": [8, 1, 8], "uv": [0, 9]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:item": {
+      "description": {
+        "identifier": "custom:center_tool",
+        "category": "Equipment"
+      },
+  
+      "components": {
+        "minecraft:icon": "center"
+      }
+    }
+  }

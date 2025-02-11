@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:display_fruit_tall_floor_lamp",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/furniture/fruit/fruit_tall_floor_lamp"
+        },
+        "geometry": {
+          "default": "geometry.fruit_tall_floor_lamp"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "furniture_egg_fruit_tall_floor_lamp" }
+      }
+    }
+  }

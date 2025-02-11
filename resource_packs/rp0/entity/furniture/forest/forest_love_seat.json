@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:forest_love_seat",
+        "materials": {
+          "default": "entity_alphatest"
+        },
+        "textures": {
+          "default": "textures/custom/entity/furniture/forest/forest_love_seat"
+        },
+        "geometry": {
+          "default": "geometry.forest_love_seat"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "furniture_egg_forest_love_seat" }
+      }
+    }
+  }

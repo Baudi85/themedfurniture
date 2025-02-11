@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:sunny",
+        "materials": {
+          "body": "entity_alphatest",
+          "glasses": "entity_alphablend"
+        },
+        "textures": {
+          "default": "textures/custom/entity/npcs/lola"
+        },
+        "geometry": {
+          "default": "geometry.otter"
+        },
+        "render_controllers": [
+          "controller.render.lola"
+        ],
+        "animations": {
+          "idle": "animation.otter.idle",
+          "walk": "animation.otter.idle",
+
+          "move": "controller.animation.generic.move"
+        },
+        "scripts": {
+          "animate": [
+            "move"
+          ]
+        }
+      }
+    }
+  }

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ts:selector_e",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/selector/selector"
+      },
+      "geometry": {
+        "default": "geometry.selector"
+      },
+      "render_controllers": [
+        "controller.render.selector"
+      ],
+      "spawn_egg": {
+        "base_color": "#8baaa7",
+        "overlay_color": "9bec4e"
+      }
+    }
+  }
+}

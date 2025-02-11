@@ -1,0 +1,14 @@
+{
+    "format_version":"1.8.0",
+    "render_controllers": {
+      "controller.render.chibi_slime": {
+        "geometry": "Geometry.default",
+        "materials": [
+          { "jelly": "Material.opaque" },
+            { "body": "Material.translucent" }
+        ],
+        "textures": [ "Texture.default" ]
+      }
+    }
+  }
+  

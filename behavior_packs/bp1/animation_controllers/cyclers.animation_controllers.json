@@ -1,0 +1,17 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.auto_cycler": {
+      "initial_state": "a",
+      "states": {
+        "a": {
+          "transitions": [ { "b": "query.all_animations_finished" } ]
+        },
+        "b": {
+          "on_entry": [ "@s cycle_texture" ],
+          "transitions": [ { "a": "query.all_animations_finished" } ]
+        }
+      }
+    }
+  }
+}

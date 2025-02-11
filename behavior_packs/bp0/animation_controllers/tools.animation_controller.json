@@ -1,0 +1,403 @@
+{
+  "format_version": "1.16.0",
+  "animation_controllers": {
+    "controller.animation.furniture.init": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": [
+            "v.rotate_counter = 0;",
+            "v.control_counter = 0;",
+            "v.is_holding_move_tool = false;"
+          ]
+        }
+      }
+    },
+    "controller.animation.furniture.just_spawned": {
+      "initial_state": "default",
+      "states": {
+        "default": { "transitions": [ { "just_spawned": "q.is_baby" } ] },
+        "just_spawned": { "on_entry": [ "/tp @s ~ ~ ~ facing ~5 ~ ~" ] }
+      }
+    },
+    "controller.animation.furniture.rotate": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_exit": [
+            "v.control_counter = q.life_time;"
+          ],
+          "transitions": [
+            { "rotate": "q.skin_id == 1" },
+            { "rotate_cc": "q.skin_id == 2" }
+          ]
+        },
+        "rotate": {
+          "on_entry": [
+            "v.rotate_counter = (v.rotate_counter == 337.5 ? 0 : v.rotate_counter + 22.5);",
+            "/execute @p ~ ~ ~ playsound custom.tools.rotate @s ~ ~ ~",
+            "/tp @s ~ ~0.25 ~ ~22.5 ~",
+            "@s remove_rotate"
+          ],
+          "transitions": [
+            { "cycle_0": "q.all_animations_finished && v.rotate_counter == 0" },
+            { "cycle_22.5": "q.all_animations_finished && v.rotate_counter == 22.5" },
+            { "cycle_45": "q.all_animations_finished && v.rotate_counter == 45" },
+            { "cycle_67.5": "q.all_animations_finished && v.rotate_counter == 67.5" },
+            { "cycle_90": "q.all_animations_finished && v.rotate_counter == 90" },
+            { "cycle_112.5": "q.all_animations_finished && v.rotate_counter == 112.5" },
+            { "cycle_135": "q.all_animations_finished && v.rotate_counter == 135" },
+            { "cycle_157.5": "q.all_animations_finished && v.rotate_counter == 157.5" },
+            { "cycle_180": "q.all_animations_finished && v.rotate_counter == 180" },
+            { "cycle_202.5": "q.all_animations_finished && v.rotate_counter == 202.5" },
+            { "cycle_225": "q.all_animations_finished && v.rotate_counter == 225" },
+            { "cycle_247.5": "q.all_animations_finished && v.rotate_counter == 247.5" },
+            { "cycle_270": "q.all_animations_finished && v.rotate_counter == 270" },
+            { "cycle_292.5": "q.all_animations_finished && v.rotate_counter == 292.5" },
+            { "cycle_315": "q.all_animations_finished && v.rotate_counter == 315" },
+            { "cycle_337.5": "q.all_animations_finished && v.rotate_counter == 337.5" }
+          ]
+        },
+        "cycle_0": { "on_entry": [ "/function rotate/rotate_0" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_22.5": { "on_entry": [ "/function rotate/rotate_22.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_45": { "on_entry": [ "/function rotate/rotate_45" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_67.5": { "on_entry": [ "/function rotate/rotate_67.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_90": { "on_entry": [ "/function rotate/rotate_90" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_112.5": { "on_entry": [ "/function rotate/rotate_112.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_135": { "on_entry": [ "/function rotate/rotate_135" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_157.5": { "on_entry": [ "/function rotate/rotate_157.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_180": { "on_entry": [ "/function rotate/rotate_180" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_202.5": { "on_entry": [ "/function rotate/rotate_202.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_225": { "on_entry": [ "/function rotate/rotate_225" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_247.5": { "on_entry": [ "/function rotate/rotate_247.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_270": { "on_entry": [ "/function rotate/rotate_270" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_292.5": { "on_entry": [ "/function rotate/rotate_292.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_315": { "on_entry": [ "/function rotate/rotate_315" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_337.5": { "on_entry": [ "/function rotate/rotate_337.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+
+        "rotate_cc": {
+          "on_entry": [
+            "v.rotate_counter = (v.rotate_counter == 0 ? 337.5 : v.rotate_counter - 22.5);",
+            "/execute @p ~ ~ ~ playsound custom.tools.rotate @s ~ ~ ~",
+            "/tp @s ~ ~0.25 ~ ~-22.5 ~",
+            "@s remove_rotate"
+          ],
+          "transitions": [
+            { "cycle_cc_0": "q.all_animations_finished && v.rotate_counter == 0" },
+            { "cycle_cc_22.5": "q.all_animations_finished && v.rotate_counter == 22.5" },
+            { "cycle_cc_45": "q.all_animations_finished && v.rotate_counter == 45" },
+            { "cycle_cc_67.5": "q.all_animations_finished && v.rotate_counter == 67.5" },
+            { "cycle_cc_90": "q.all_animations_finished && v.rotate_counter == 90" },
+            { "cycle_cc_112.5": "q.all_animations_finished && v.rotate_counter == 112.5" },
+            { "cycle_cc_135": "q.all_animations_finished && v.rotate_counter == 135" },
+            { "cycle_cc_157.5": "q.all_animations_finished && v.rotate_counter == 157.5" },
+            { "cycle_cc_180": "q.all_animations_finished && v.rotate_counter == 180" },
+            { "cycle_cc_202.5": "q.all_animations_finished && v.rotate_counter == 202.5" },
+            { "cycle_cc_225": "q.all_animations_finished && v.rotate_counter == 225" },
+            { "cycle_cc_247.5": "q.all_animations_finished && v.rotate_counter == 247.5" },
+            { "cycle_cc_270": "q.all_animations_finished && v.rotate_counter == 270" },
+            { "cycle_cc_292.5": "q.all_animations_finished && v.rotate_counter == 292.5" },
+            { "cycle_cc_315": "q.all_animations_finished && v.rotate_counter == 315" },
+            { "cycle_cc_337.5": "q.all_animations_finished && v.rotate_counter == 337.5" }
+          ]
+        },
+        "cycle_cc_0": { "on_entry": [ "/function rotate/rotate_0" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_22.5": { "on_entry": [ "/function rotate/rotate_22.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_45": { "on_entry": [ "/function rotate/rotate_45" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_67.5": { "on_entry": [ "/function rotate/rotate_67.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_90": { "on_entry": [ "/function rotate/rotate_90" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_112.5": { "on_entry": [ "/function rotate/rotate_112.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_135": { "on_entry": [ "/function rotate/rotate_135" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_157.5": { "on_entry": [ "/function rotate/rotate_157.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_180": { "on_entry": [ "/function rotate/rotate_180" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_202.5": { "on_entry": [ "/function rotate/rotate_202.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_225": { "on_entry": [ "/function rotate/rotate_225" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_247.5": { "on_entry": [ "/function rotate/rotate_247.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_270": { "on_entry": [ "/function rotate/rotate_270" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_292.5": { "on_entry": [ "/function rotate/rotate_292.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_315": { "on_entry": [ "/function rotate/rotate_315" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] },
+        "cycle_cc_337.5": { "on_entry": [ "/function rotate/rotate_337.5" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ] }
+      }
+    },
+
+    "controller.animation.furniture.color_cycler": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_exit": [ "v.control_counter = q.life_time;" ],
+          "transitions": [
+            { "cycle": "q.is_tamed && !q.is_ignited" },
+            { "cycle_backwards": "q.is_tamed && q.is_ignited" }
+          ]
+        },
+        "cycle": {
+          "on_entry": [
+            "/tp @s ~ ~0.25 ~ ~22.5 ~",
+            "@s remove_cycle_color"
+          ],
+          "transitions": [
+            { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" }
+          ]
+        },
+
+        "cycle_backwards": {
+          "on_entry": [
+            "/tp @s ~ ~0.25 ~ ~-22.5 ~",
+            "@s remove_cycle_color"
+          ],
+          "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25" } ]
+        }
+      }
+    },
+    "controller.animation.furniture.despawn": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            { "despawn": "q.skin_id == 3" },
+            { "despawn_left_click": "q.skin_id == 12" }
+          ]
+        },
+        "despawn": {
+          "on_entry": [
+            "/fill ~ ~ ~ ~ ~ ~ air 0 replace light_block",
+            "/tp @s 0 -1 0",
+            "/execute @p ~ ~ ~ playsound custom.tools.despawner @s ~ ~ ~",
+            "/function despawn",
+            "@s remove_despawn"
+          ]
+        },
+        "despawn_left_click": {
+          "on_entry": [
+            "/execute @p ~ ~ ~ playsound custom.tools.despawner @s ~ ~ ~",
+            "/fill ~ ~ ~ ~ ~ ~ air 0 replace light_block",
+            "@s despawn_left_click_2"
+          ]
+        }
+      }
+    },
+    "controller.animation.furniture.move": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ { "move": "q.skin_id == 8" } ]
+        },
+        "move": {
+          "on_entry": [
+            "/execute @s[tag=!moving] ~ ~ ~ execute @p ~ ~ ~ playsound custom.tools.move @s ~ ~ ~",
+            "/tag @s add moving",
+            "/fill ~ ~ ~ ~ ~ ~ air 0 replace light_block",
+            "/function move"
+          ],
+          "transitions": [ { "default": "q.all_animations_finished" } ]
+        }
+      }
+    },
+    "controller.animation.furniture.remove_move": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ { "move": "q.skin_id == 11" } ] },
+        "move": {
+          "on_entry": [
+            "/tag @s remove moving",
+            "/execute @p ~ ~ ~ playsound custom.tools.move @s ~ ~ ~",
+            "/function remove_move",
+            "@s reset"
+          ],
+          "transitions": [ { "default": "q.all_animations_finished" } ]
+        }
+      }
+    },
+
+    "controller.animation.furniture.holding_move_tool": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": [ "/tag @s remove holding_move_tool"],
+          "transitions": [ { "holding": "q.get_equipped_item_name('main_hand') == 'move_tool'" } ]
+        },
+        "holding": {
+          "on_entry": ["/tag @s add holding_move_tool" ],
+          "transitions": [ { "default": "q.get_equipped_item_name('main_hand') != 'move_tool'" } ]
+        }
+      }
+    },
+    "controller.animation.furniture.move_tool_attacking": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          //"on_entry": [ "/tag @s remove move_tool_attacking"],
+          "transitions": [ { "attacking": "q.get_equipped_item_name('main_hand') == 'move_tool' && v.attack_time > 0" } ]
+        },
+        "attacking": {
+          "on_entry": [ "/event entity @e[tag=moving,r=6,c=1] remove_move" ],
+          "transitions": [ { "default": "q.all_animations_finished" } ]
+        }
+      }
+    },
+
+    "controller.animation.furniture.center": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            { "center": "q.skin_id == 9" },
+            { "snap_rotation": "q.skin_id == 10" }
+          ]
+        },
+        "center": {
+          "on_entry": [
+            "/summon custom:centerizer",
+            "/execute @p ~ ~ ~ playsound custom.tools.center @s ~ ~ ~",
+            "/fill ~ ~ ~ ~ ~ ~ air 0 replace light_block",
+            "/function center",
+            "@s remove_center"
+          ],
+          "transitions": [
+            {
+              "default": "q.all_animations_finished"
+            }
+          ]
+        },
+        "snap_rotation": {
+          "on_entry": [
+            "@s remove_center",
+            "/execute @p ~ ~ ~ playsound custom.tools.center @s ~ ~ ~",
+            "/function snap_rotation"
+          ],
+          "transitions": [ { "default": "q.all_animations_finished" } ]
+        }
+      }
+    },
+
+    "controller.animation.furniture.center_entity": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            { "center": "q.skin_id == 1" }
+          ]
+        },
+        "center": {
+          "on_entry": [
+            "/tp @e[family=furniture,c=1] ~ ~0.25 ~",
+            "/tp @e[c=1] @s",
+            "/tp @s 0 -1 0"
+          ],
+          "transitions": [
+            {
+              "default": "q.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+
+    "controller.animation.furniture.shift": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_exit": [
+            "v.control_counter = q.life_time;",
+            "/fill ~ ~ ~ ~ ~ ~ air 0 replace light_block",
+            "/execute @p ~ ~ ~ playsound custom.tools.shift @s ~ ~ ~"
+          ],
+          "transitions": [
+            { "forward": "q.is_sheared && !q.is_ignited" },
+            { "backwards": "q.is_sheared && q.is_ignited" }
+          ]
+        },
+        "forward": {
+          "on_entry": [
+            "/tag @s add get_compass_direction",
+            "/event entity @p get_compass_direction"
+
+          ],
+          "transitions": [
+            { "forward_north": "q.variant == 2" },
+            { "forward_south": "q.variant == 3" },
+            { "forward_west": "q.variant == 4" },
+            { "forward_east": "q.variant == 5" }
+          ]
+        },
+        "forward_north": { "on_entry": [ "/tp @s ~ ~0.25 ~-0.1", "/function shifted/north" ], "transitions": [ { "remove_shift": "q.all_animations_finished" } ] },
+        "forward_south": { "on_entry": [ "/tp @s ~ ~0.25 ~0.1", "/function shifted/south" ], "transitions": [ { "remove_shift": "q.all_animations_finished" } ] },
+        "forward_west": { "on_entry": [ "/tp @s ~-0.25 ~0.1 ~", "/function shifted/west" ], "transitions": [ { "remove_shift": "q.all_animations_finished" } ] },
+        "forward_east": { "on_entry": [ "/tp @s ~0.25 ~0.1 ~", "/function shifted/east" ], "transitions": [ { "remove_shift": "q.all_animations_finished" } ] },
+
+        "backwards": {
+          "on_entry": [
+            "/tag @s add get_compass_direction",
+            "/event entity @p get_compass_direction"
+
+          ],
+          "transitions": [
+            { "backwards_north": "q.variant == 2" },
+            { "backwards_south": "q.variant == 3" },
+            { "backwards_west": "q.variant == 4" },
+            { "backwards_east": "q.variant == 5" }
+          ]
+        },
+        "backwards_north": { "on_entry": [ "/tp @s ~ ~0.25 ~0.1", "/function shifted/south" ], "transitions": [ { "remove_shift": "q.all_animations_finished" } ] },
+        "backwards_south": { "on_entry": [ "/tp @s ~ ~0.25 ~-0.1", "/function shifted/north" ], "transitions": [ { "remove_shift": "q.all_animations_finished" } ] },
+        "backwards_west": { "on_entry": [ "/tp @s ~0.25 ~0.1 ~", "/function shifted/east" ], "transitions": [ { "remove_shift": "q.all_animations_finished" } ] },
+        "backwards_east": { "on_entry": [ "/tp @s ~-0.25 ~0.1 ~", "/function shifted/west" ], "transitions": [ { "remove_shift": "q.all_animations_finished" } ] },
+
+        "remove_shift": { "on_entry": [ "@s remove_shift" ], "transitions": [ { "default": "q.all_animations_finished && (q.life_time - v.control_counter) > 0.25"} ] }
+      }
+    },
+    "controller.animation.player.get_compass_direction": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ { "get_compass_direction": "q.is_sheared" } ]
+        },
+        "get_compass_direction": {
+          "on_entry": [
+            "@s remove_get_compass_direction"
+          ],
+          "transitions": [
+            { "north": "q.cardinal_facing == 2.0" },
+            { "south": "q.cardinal_facing == 3.0" },
+            { "west": "q.cardinal_facing == 4.0" },
+            { "east": "q.cardinal_facing == 5.0" }
+          ]
+        },
+        "north": { "on_entry": [ "/event entity @e[r=8,tag=get_compass_direction] north" ], "transitions": [ { "remove_get_compass_direction": "q.all_animations_finished" } ] },
+        "south": { "on_entry": [ "/event entity @e[r=8,tag=get_compass_direction] south" ], "transitions": [ { "remove_get_compass_direction": "q.all_animations_finished" } ] },
+        "west": { "on_entry": [ "/event entity @e[r=8,tag=get_compass_direction] west" ], "transitions": [ { "remove_get_compass_direction": "q.all_animations_finished" } ] },
+        "east": { "on_entry": [ "/event entity @e[r=8,tag=get_compass_direction] east" ], "transitions": [ { "remove_get_compass_direction": "q.all_animations_finished" } ] },
+        "remove_get_compass_direction": { "on_entry": [ "/tag @e[r=8] remove get_compass_direction" ], "transitions": [ { "default": "q.all_animations_finished" } ] }
+      }
+    },
+
+    "controller.animation.furniture.toggle_lights": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            { "on": "q.skin_id == 13" }
+          ]
+        },
+        "on": {
+          "on_entry": [
+            "@s reset",
+            "/execute @p ~ ~ ~ playsound custom.tools.toggle_lights @s ~ ~ ~",
+            "/fill ~ ~ ~ ~ ~ ~ light_block 15 replace air"
+          ],
+          "transitions": [ { "off": "q.all_animations_finished && q.skin_id == 13" } ]
+        },
+        "off": {
+          "on_entry": [
+            "@s reset",
+            "/execute @p ~ ~ ~ playsound custom.tools.toggle_lights @s ~ ~ ~",
+            "/fill ~ ~ ~ ~ ~ ~ air 0 replace light_block"
+          ],
+          "transitions": [ { "on": "q.all_animations_finished && q.skin_id == 13" } ]
+        }
+      }
+    }
+    
+  }
+}

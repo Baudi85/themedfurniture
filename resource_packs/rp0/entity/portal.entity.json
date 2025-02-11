@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:portal",
+        "materials": {
+          "default": "entity_alphatest"
+        },
+        "textures": {
+          "default": "textures/entity/empty"
+        },
+        "geometry": {
+          "default": "geometry.empty"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "particle_effects": {
+          "portal": "custom:portal_2"
+        },
+        "animations": {
+            "portal_particles": "controller.animation.portal"
+        },
+        "scripts": {
+            "animate": [
+                "portal_particles"
+            ]
+        }
+      }
+    }
+  }

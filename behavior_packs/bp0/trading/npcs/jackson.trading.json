@@ -1,0 +1,91 @@
+{
+    "tiers": [
+        {
+            "trades": [
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 0 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 1 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 2 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 3 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 4 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 5 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 6 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 7 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 8 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 9 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 10 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 11 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 12 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 13 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 14 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 64 } ],
+                    "gives": [{ "item": "minecraft:stained_glass", "quantity": 30, "functions": [ { "function": "set_data", "data": 15 } ] } ],
+                    "max_uses": -1
+                }
+            ]
+        }
+    ]
+}
+
+
+

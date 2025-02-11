@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:bonnie_the_security_guard",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/npcs/bonnie_the_security_guard"
+        },
+        "geometry": {
+          "default": "geometry.rabbit"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "animations": {
+          "idle": "animation.rabbit.idle",
+          "walk": "animation.rabbit.idle",
+
+          "move": "controller.animation.generic.move"
+        },
+        "scripts": {
+          "animate": [
+            "move"
+          ]
+        }
+      }
+    }
+  }

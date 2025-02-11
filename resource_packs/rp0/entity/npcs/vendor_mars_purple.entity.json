@@ -1,0 +1,24 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:vendor_mars_purple",
+        "materials": {
+          "default": "entity_alphatest"
+        },
+        "textures": {
+          "default": "textures/custom/entity/npcs/blue_otter"
+        },
+        "geometry": {
+          "default": "geometry.otter"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "animations": {
+          "idle": "animation.otter.idle"
+        },
+        "scripts": { "animate": [ "idle" ] }
+      }
+    }
+  }

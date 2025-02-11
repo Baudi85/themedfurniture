@@ -1,0 +1,9 @@
+{
+    "values": [
+        "move_tool_handler",
+        "shake",
+        "portal_activation",
+        "npc_face_player",
+        "display/vendor_tick"
+    ]
+}

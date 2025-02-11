@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:kujo",
+        "materials": {
+          "default": "entity_alphatest"
+        },
+        "textures": {
+          "default": "textures/custom/entity/npcs/kujo"
+        },
+        "geometry": {
+          "default": "geometry.cat"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "animations": {
+          "idle": "animation.cat.idle",
+          "walk": "animation.cat.idle",
+
+          "move": "controller.animation.generic.move"
+        },
+        "scripts": {
+          "animate": [
+            "move"
+          ]
+        }
+      }
+    }
+  }

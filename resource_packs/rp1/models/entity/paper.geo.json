@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.paper",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "bone11",
+					"pivot": [-0.5, 0.5, 5.5],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-10, 0, 1], "size": [2, 1, 1], "pivot": [-1, 0, 0], "rotation": [0, 90, 0], "uv": [15, 15]},
+						{"origin": [-11, 0, 2], "size": [4, 1, 1], "pivot": [-1, 0, 0], "rotation": [0, 90, 0], "uv": [0, 14]},
+						{"origin": [-12, 0, 3], "size": [6, 1, 1], "pivot": [-1, 0, 0], "rotation": [0, 90, 0], "uv": [0, 12]},
+						{"origin": [-13, 0, 4], "size": [9, 1, 1], "pivot": [-1, 0, 0], "rotation": [0, 90, 0], "uv": [0, 8]},
+						{"origin": [-14, 0, 5], "size": [12, 1, 1], "pivot": [-1, 0, 0], "rotation": [0, 90, 0], "uv": [0, 4]},
+						{"origin": [-15, 0, 6], "size": [15, 1, 1], "pivot": [-1, 0, 0], "rotation": [0, 90, 0], "uv": [0, 0]},
+						{"origin": [-13, 0, 7], "size": [12, 1, 1], "pivot": [-1, 0, 0], "rotation": [0, 90, 0], "uv": [0, 2]},
+						{"origin": [-12, 0, 8], "size": [10, 1, 1], "pivot": [-1, 0, 0], "rotation": [0, 90, 0], "uv": [0, 6]},
+						{"origin": [-11, 0, 9], "size": [8, 1, 1], "pivot": [-1, 0, 0], "rotation": [0, 90, 0], "uv": [0, 10]},
+						{"origin": [-9, 0, 10], "size": [5, 1, 1], "pivot": [-1, 0, 0], "rotation": [0, 90, 0], "uv": [13, 13]},
+						{"origin": [-7, 0, 11], "size": [2, 1, 1], "pivot": [-1, 0, 0], "rotation": [0, 90, 0], "uv": [9, 15]}
+					]
+				}
+			]
+		}
+	]
+}

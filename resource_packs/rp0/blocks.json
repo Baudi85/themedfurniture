@@ -1,0 +1,94 @@
+{
+  "format_version": [ 1, 1, 0 ],
+  "custom:decoration_forest": { "textures": "decoration_forest", "sound": "stone" },
+  "custom:decoration_fruit": { "textures": "decoration_fruit", "sound": "stone" },
+  "custom:decoration_gold": { "textures": "decoration_gold", "sound": "stone" },
+  "custom:decoration_luxury": { "textures": "decoration_luxury", "sound": "stone" },
+  "custom:decoration_mars": { "textures": "decoration_mars", "sound": "stone" },
+  "custom:decoration_mars_purple": { "textures": "decoration_mars_purple", "sound": "stone" },
+  "custom:decoration_rainbow": { "textures": "decoration_rainbow", "sound": "stone" },
+  "custom:decoration_mermaid": { "textures": "decoration_mermaid", "sound": "stone" },
+  "custom:decoration_valentines": { "textures": "decoration_valentines", "sound": "stone" },
+  "custom:decoration_winter": { "textures": "decoration_winter", "sound": "stone" },
+  "custom:decoration_zen": { "textures": "decoration_zen", "sound": "stone" },
+
+  "custom:golden_bedrock": { "textures": "golden_bedrock", "sound": "stone" },
+  "custom:quartz_bedrock": { "textures": "quartz_bedrock", "sound": "stone" },
+
+   "sand" : {
+      "brightness_gamma" : 0.550,
+      "isotropic" : false,
+      "sound" : "sand",
+      "textures" : "sand"
+   },
+   "dirt" : {
+      "isotropic" : false,
+      "sound" : "gravel",
+      "textures" : "dirt"
+   },
+   "grass" : {
+      "carried_textures" : {
+         "down" : "grass_carried_bottom",
+         "side" : "grass_carried",
+         "up" : "grass_carried_top"
+      },
+      "isotropic" : {
+         "down" : false,
+         "up" : false
+      },
+      "sound" : "grass",
+      "textures" : {
+         "down" : "grass_bottom",
+         "side" : "grass_side",
+         "up" : "grass_top"
+      }
+   },
+   "grass_path" : {
+      "isotropic" : {
+         "down" : false,
+         "up" : false
+      },
+      "sound" : "grass",
+      "textures" : {
+         "down" : "dirt",
+         "side" : "grass_path_side",
+         "up" : "grass_path_top"
+      }
+   },
+   "mycelium" : {
+      "isotropic" : {
+         "down" : false,
+         "up" : false
+      },
+      "sound" : "grass",
+      "textures" : {
+         "down" : "mycelium_bottom",
+         "side" : "mycelium_side",
+         "up" : "mycelium_top"
+      }
+   },
+   "podzol" : {
+      "isotropic" : {
+         "down" : false,
+         "up" : false
+      },
+      "sound" : "gravel",
+      "textures" : {
+         "down" : "dirt_podzol_bottom",
+         "side" : "dirt_podzol_side",
+         "up" : "dirt_podzol_top"
+      }
+   },
+   "snow" : {
+      "brightness_gamma" : 0.450,
+      "isotropic" : false,
+      "sound" : "snow",
+      "textures" : "snow"
+   },
+   "snow_layer" : {
+      "brightness_gamma" : 0.450,
+      "isotropic" : false,
+      "sound" : "snow",
+      "textures" : "snow"
+  }
+}

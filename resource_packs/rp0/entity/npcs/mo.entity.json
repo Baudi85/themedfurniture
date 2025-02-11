@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:mo",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/npcs/mo",
+          "elytra": "textures/custom/entity/npcs/mo_elytra"
+        },
+        "geometry": {
+          "default": "geometry.walrus"
+        },
+        "render_controllers": [
+          "controller.render.mo"
+        ],
+        "animations": {
+          "idle": "animation.walrus.idle",
+          "walk": "animation.walrus.idle",
+
+          "move": "controller.animation.generic.move"
+        },
+        "scripts": {
+          "animate": [
+            "move"
+          ]
+        }
+      }
+    }
+  }

@@ -1,0 +1,16 @@
+{
+    "tiers": [
+        {
+            "trades": [
+                {
+                    "wants": [ { "item": "minecraft:emerald_block", "quantity": 16 } ],
+                    "gives": [ { "item": "minecraft:elytra", "quantity": 1 } ],
+                    "max_uses": -1
+                }
+            ]
+        }
+    ]
+}
+
+
+

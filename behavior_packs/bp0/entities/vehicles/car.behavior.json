@@ -1,0 +1,88 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:car",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "spawn_egg": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+
+      "car_blue": { "minecraft:skin_id": { "value": 0 } },
+      "car_green": { "minecraft:skin_id": { "value": 1 } },
+      "car_indigo": { "minecraft:skin_id": { "value": 2 } },
+      "car_lime": { "minecraft:skin_id": { "value": 3 } },
+      "car_magenta": { "minecraft:skin_id": { "value": 4 } },
+      "car_orange": { "minecraft:skin_id": { "value": 5 } },
+      "car_pink": { "minecraft:skin_id": { "value": 6 } },
+      "car_purple": { "minecraft:skin_id": { "value": 7 } },
+      "car_red": { "minecraft:skin_id": { "value": 8 } },
+      "car_teal": { "minecraft:skin_id": { "value": 9 } },
+      "car_yellow": { "minecraft:skin_id": { "value": 10 } }
+
+    },
+    "components": {
+      "minecraft:type_family": { 
+        "family": [ "custom", "vehicle" ]
+      },
+      "minecraft:health": {
+        "value": 15,
+        "max": 15
+      },
+      "minecraft:collision_box": {
+        "width": 1.75,
+        "height": 1.25
+      },
+
+      "minecraft:physics": {},
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:rideable": {
+				"seat_count": 2,
+				"crouching_skip_interact": true,
+				"family_types": [ "player" ],
+				"interact_text": "Drive",
+				"seats": [
+          { "position": [0.55, 0.45, 0.15] },
+          { "position": [-0.55, 0.45, 0.15] }
+        ]
+			},
+      "minecraft:navigation.walk": {
+				"can_float": true,
+				"avoid_water": false
+			},
+      "minecraft:movement.basic": {},
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.12,
+          "range_max": 0.25
+        }
+      },
+      "minecraft:input_ground_controlled": {},
+      "minecraft:jump.static": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          { "weight": 1, "add": { "component_groups": [ "car_blue" ] } },
+          { "weight": 1, "add": { "component_groups": [ "car_green" ] } },
+          { "weight": 1, "add": { "component_groups": [ "car_indigo" ] } },
+          { "weight": 1, "add": { "component_groups": [ "car_lime" ] } },
+          { "weight": 1, "add": { "component_groups": [ "car_magenta" ] } },
+          { "weight": 1, "add": { "component_groups": [ "car_orange" ] } },
+          { "weight": 1, "add": { "component_groups": [ "car_pink" ] } },
+          { "weight": 1, "add": { "component_groups": [ "car_purple" ] } },
+          { "weight": 1, "add": { "component_groups": [ "car_red" ] } },
+          { "weight": 1, "add": { "component_groups": [ "car_teal" ] } },
+          { "weight": 1, "add": { "component_groups": [ "car_yellow" ] } }
+        ]
+      }
+    }
+  }
+}

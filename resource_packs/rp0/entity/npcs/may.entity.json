@@ -1,0 +1,22 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:may",
+        "materials": {
+          "default": "entity_alphatest"
+        },
+        "textures": {
+          "default": "textures/custom/entity/npcs/female_black_deer"
+        },
+        "geometry": {
+          "default": "geometry.deer"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "animations": { "idle": "animation.deer.idle" },
+        "scripts": { "animate": [ "idle" ] }
+      }
+    }
+  }

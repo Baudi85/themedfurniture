@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ts:coin",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/coin"
+      },
+      "geometry": {
+        "default": "geometry.coin"
+      },
+      "render_controllers": [
+        "controller.render.generic"
+      ],
+      "animations": {
+        "rotate_and_bob": "animation.coin.rotate_and_bob"
+      },
+      "scripts": {
+        "animate": [
+          "rotate_and_bob"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#8b74a7",
+        "overlay_color": "26ba4e"
+      }
+    }
+  }
+}

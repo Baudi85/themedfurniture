@@ -1,0 +1,28 @@
+{
+    "format_version":"1.8.0",
+    "render_controllers": {
+      "controller.render.car": {
+        "arrays": {
+          "textures": {
+            "Array.skins": [
+              "Texture.car_blue",
+              "Texture.car_green",
+              "Texture.car_indigo",
+              "Texture.car_lime",
+              "Texture.car_magenta",
+              "Texture.car_orange",
+              "Texture.car_pink",
+              "Texture.car_purple",
+              "Texture.car_red",
+              "Texture.car_teal",
+              "Texture.car_yellow"
+            ]
+          }
+        },
+        "geometry": "Geometry.default",
+        "materials": [ { "*": "Material.default" } ],
+        "textures": [ "Array.skins[q.skin_id]" ]
+      }
+    }
+  }
+  

@@ -1,0 +1,92 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.custom_npc_start_tutorial": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "echo_event_main": "query.skin_id == 1"
+                        },
+                        {
+                            "echo_event_main_2": "query.skin_id == 2"
+                        },
+                        {
+                            "echo_event_main_3": "query.skin_id == 3"
+                        },
+                        {
+                            "echo_event_main_4": "query.skin_id == 4"
+                        },
+                        {
+                            "echo_event_main_5": "query.skin_id == 5"
+                        }
+                    ]
+                },
+                "echo_event_main": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.notification @a ~ ~ ~",
+                        "/title @a[x=1089,y=0,z=-1115,dx=12,dy=5,dz=16] times 20 200 20",
+                        "@s echo:clear",
+                        "@s echo:main_2"
+                    ]
+                },
+                "echo_event_main_2": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.start_tutorial.welcome_to_themed @a ~ ~ ~",
+                        "/title @a[x=1089,y=0,z=-1115,dx=12,dy=5,dz=16] actionbar §6Chuck:§f Welcome to Themed Furniture!",
+                        "@s echo:clear",
+                        "@s echo:main_3"
+                    ]
+                },
+                "echo_event_main_3": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.start_tutorial.would_you_like @a ~ ~ ~",
+                        "/title @a[x=1089,y=0,z=-1115,dx=12,dy=5,dz=16] actionbar §6Chuck:§f Would you like a tutorial before you start?",
+                        "@s echo:clear",
+                        "@s echo:main_4"
+                    ]
+                },
+                "echo_event_main_4": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.start_tutorial.interact_with_me @a ~ ~ ~",
+                        "/title @a[x=1089,y=0,z=-1115,dx=12,dy=5,dz=16] actionbar §6Chuck:§f Interact with me to begin the tutorial!",
+                        "@s echo:clear",
+                        "@s echo:main_5"
+                    ]
+                },
+                "echo_event_main_5": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 5"
+                        }
+                    ],
+                    "on_entry": [
+                        "/execute @p ~ ~ ~ function tutorials/goto_center",
+                        "@s echo:clear",
+                        "@s echo:main"
+                    ]
+                }
+            }
+        }
+    }
+}

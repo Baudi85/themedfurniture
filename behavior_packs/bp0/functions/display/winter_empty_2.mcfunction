@@ -1,0 +1,1 @@
+execute @e[x=1047,y=67,z=-1101,dx=8,dy=9,dz=12,family=display_winter] ~ ~ ~ tp @e[type=custom:display_target,r=1,c=1] ~ ~ ~ facing ^ ^ ^10

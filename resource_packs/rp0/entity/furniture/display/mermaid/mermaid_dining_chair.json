@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:display_mermaid_dining_chair",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/furniture/mermaid/mermaid_dining_chair"
+        },
+        "geometry": {
+          "default": "geometry.mermaid_dining_chair"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "furniture_egg_mermaid_dining_chair" }
+      }
+    }
+  }

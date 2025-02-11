@@ -1,0 +1,101 @@
+{
+    "tiers": [
+        {
+            "trades": [
+                {
+                    "gives": [ { "item": "minecraft:rotten_flesh", "quantity": 5 } ],
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "max_uses": -1
+                },
+                {
+                    "gives": [ { "item": "minecraft:spider_eye", "quantity": 5 } ],
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 3 } ],
+                    "max_uses": -1
+                },
+                {
+                    "gives": [ { "item": "minecraft:bone", "quantity": 5 } ],
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 3 } ],
+                    "max_uses": -1
+                },
+                {
+                    "gives": [ { "item": "minecraft:gunpowder", "quantity": 5 } ],
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 5 } ],
+                    "max_uses": -1
+                },
+                {
+                    "gives": [ { "item": "minecraft:ender_pearl", "quantity": 5 } ],
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 8 } ],
+                    "max_uses": -1
+                },
+
+
+
+                {
+                    "wants": [ { "item": "minecraft:rotten_flesh", "quantity": 15 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 2 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:spider_eye", "quantity": 15 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 3 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:bone", "quantity": 18 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 3 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:gunpowder", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 5 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:ender_pearl", "quantity": 15 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 8 } ],
+                    "max_uses": -1
+                },
+
+
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 25 } ],
+                    "gives": [ { "item": "minecraft:iron_sword", "quantity": 1 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 22 } ],
+                    "gives": [ { "item": "minecraft:bow", "quantity": 1 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 28 } ],
+                    "gives": [ { "item": "minecraft:arrow", "quantity": 20 } ],
+                    "max_uses": -1
+                },
+
+
+
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 12 } ],
+                    "gives": [ { "item": "minecraft:chainmail_helmet", "quantity": 1 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 12 } ],
+                    "gives": [ { "item": "minecraft:chainmail_chestplate", "quantity": 1 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 12 } ],
+                    "gives": [ { "item": "minecraft:chainmail_leggings", "quantity": 1 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 12 } ],
+                    "gives": [ { "item": "minecraft:chainmail_boots", "quantity": 1 } ],
+                    "max_uses": -1
+                }
+            ]
+        }
+    ]
+}

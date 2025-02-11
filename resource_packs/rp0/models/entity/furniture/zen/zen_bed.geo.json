@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.zeN_bed",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bed_zen",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-13, 3, -23], "size": [26, 7, 46], "uv": [0, 0]},
+						{"origin": [-13, 10, -19], "size": [26, 1, 8], "uv": [98, 17]},
+						{"origin": [13, 10, -19], "size": [3, 1, 8], "pivot": [13, 11, -19], "rotation": [0, 0, 52.5], "uv": [14, 14]},
+						{"origin": [-16, 10, -19], "size": [3, 1, 8], "pivot": [-13, 11, -19], "rotation": [0, 0, -52.5], "uv": [0, 13]},
+						{"origin": [-6, 10, 11], "size": [12, 3, 10], "pivot": [6, 10, 21], "rotation": [10, 0, 0], "uv": [0, 0]},
+						{"origin": [-15, 3, -25], "size": [30, 6, 2], "uv": [98, 26]},
+						{"origin": [5, 0, -19], "size": [7, 3, 2], "uv": [28, 13]},
+						{"origin": [-12, 0, -19], "size": [7, 3, 2], "uv": [0, 28]},
+						{"origin": [5, 0, 18], "size": [7, 3, 2], "uv": [18, 23]},
+						{"origin": [-12, 0, 18], "size": [7, 3, 2], "uv": [0, 23]},
+						{"origin": [-15, 3, 23], "size": [30, 15, 2], "uv": [98, 0]},
+						{"origin": [13, 3, -23], "size": [2, 4, 46], "uv": [50, 57]},
+						{"origin": [-15, 3, -23], "size": [2, 4, 46], "uv": [0, 53]}
+					]
+				}
+			]
+		}
+	]
+}

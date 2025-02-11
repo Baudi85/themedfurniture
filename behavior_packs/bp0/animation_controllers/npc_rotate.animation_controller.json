@@ -1,0 +1,108 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.custom_npc_rotate": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "echo_event_main": "query.skin_id == 1"
+                        },
+                        {
+                            "echo_event_main_2": "query.skin_id == 2"
+                        },
+                        {
+                            "echo_event_main_3": "query.skin_id == 3"
+                        },
+                        {
+                            "echo_event_main_4": "query.skin_id == 4"
+                        },
+                        {
+                            "echo_event_main_5": "query.skin_id == 5"
+                        },
+                        {
+                            "echo_event_main_6": "query.skin_id == 6"
+                        }
+                    ]
+                },
+                "echo_event_main": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.notification @a ~ ~ ~",
+                        "/title @a[x=1089,y=0,z=-1115,dx=12,dy=5,dz=16] times 20 200 20",
+                        "@s echo:clear",
+                        "@s echo:main_2"
+                    ]
+                },
+                "echo_event_main_2": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.despawner.this_is_the @a ~ ~ ~",
+                        "/title @a[x=1068,y=0,z=-1116,dx=9,dy=5,dz=13] actionbar §6Chuck:§f This is the rotate tool!",
+                        "@s echo:clear",
+                        "@s echo:main_3"
+                    ]
+                },
+                "echo_event_main_3": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.rotate.left_click_to @a ~ ~ ~",
+                        "/title @a[x=1068,y=0,z=-1116,dx=9,dy=5,dz=13] actionbar §6Chuck:§f Left click to rotate the furniture 22.5 degrees counter clockwise.",
+                        "@s echo:clear",
+                        "@s echo:main_4"
+                    ]
+                },
+                "echo_event_main_4": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.rotate.right_click_to @a ~ ~ ~",
+                        "/title @a[x=1068,y=0,z=-1116,dx=9,dy=5,dz=13] actionbar §6Chuck:§f Right click to rotate the furniture 22.5 degrees clockwise.",
+                        "@s echo:clear",
+                        "@s echo:main_5"
+                    ]
+                },
+                "echo_event_main_5": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 5"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playsound custom.speech.npc.start_tutorial.interact_with_me @a ~ ~ ~",
+                        "/title @a[x=1068,y=0,z=-1116,dx=9,dy=5,dz=13] actionbar §6Chuck:§f Interact with me to try the next tool!",
+                        "@s echo:clear",
+                        "@s echo:main_6"
+                    ]
+                },
+                "echo_event_main_6": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 6"
+                        }
+                    ],
+                    "on_entry": [
+                        "/execute @p ~ ~ ~ function tutorials/goto_shift",
+                        "@s echo:clear",
+                        "@s echo:main"
+                    ]
+                }
+            }
+        }
+    }
+}

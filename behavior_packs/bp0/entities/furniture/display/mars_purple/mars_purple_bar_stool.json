@@ -1,0 +1,42 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:display_mars_purple_bar_stool",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "spawn_egg": true,
+      "is_experimental": false
+    },
+    "component_groups": {},
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers":[
+          { "cause": "all", "deals_damage": false }
+        ]
+      },
+      "minecraft:rideable": {
+        "family_types": [ "player" ],
+        "interact_text": "Sit",
+        "seat_count": 1,
+        "seats": [
+          { "position": [ 0, 0.6, -0.1 ], "lock_rider_rotation": 80 }
+        ]
+      },
+      "minecraft:type_family": { "family": [ "display", "display_mars_purple" ] },
+      "minecraft:scale": { "value": 1 },
+      "minecraft:collision_box": {
+        "width": 0.75,
+        "height": 0.65
+      },
+      "minecraft:breathable": {
+        "breathes_solids": true,
+        "breathes_lava": true,
+        "breathes_water": true,
+        "breathes_air": true
+      }
+    },
+    "events": {
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.sign_store_rectangle_2",
+				"texture_width": 656,
+				"texture_height": 656,
+				"visible_bounds_width": 21,
+				"visible_bounds_height": 8,
+				"visible_bounds_offset": [0, 3, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-160, 0, 0], "size": [320, 96, 1], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

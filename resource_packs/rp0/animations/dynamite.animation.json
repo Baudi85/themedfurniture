@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.dynamite.ignite": {
+			"loop": true,
+			"bones": {
+				"handle": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.5": [0, -3, 0]
+					},
+					"scale": [1, 1, 1]
+				}
+			}
+		},
+
+		"animation.dynamite_big.ignite": {
+			"loop": true,
+			"bones": {
+				"handle": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"6.0": [0, -3, 0]
+					},
+					"scale": [1, 1, 1]
+				}
+			}
+		}
+	}
+}

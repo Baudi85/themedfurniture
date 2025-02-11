@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.helmet",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-4, 0, -5], "size": [10, 1, 6], "uv": [0, 0]},
+						{"origin": [-3, 0, 1], "size": [8, 1, 1], "uv": [0, 7]},
+						{"origin": [-3, 0, -6], "size": [2, 1, 1], "uv": [0, 2]},
+						{"origin": [3, 0, -6], "size": [2, 1, 1], "uv": [0, 0]},
+						{"origin": [-2, 0, 2], "size": [6, 1, 1], "uv": [0, 9]}
+					]
+				}
+			]
+		}
+	]
+}

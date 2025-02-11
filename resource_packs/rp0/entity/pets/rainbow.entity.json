@@ -1,0 +1,41 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:chibi_rainbow",
+        "materials": {
+          "default": "entity_alphablend"
+        },
+        "textures": {
+          "default": "textures/custom/entity/pets/rainbow"
+        },
+        "geometry": {
+          "default": "geometry.chibi_slime"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "chibi_egg_rainbow" },
+        "animations": {
+          "walk": "animation.chibi_slime.idle",
+          "idle": "animation.chibi_slime.idle",
+          "sit": "animation.chibi_slime.sit",
+
+          "move_sittable": "controller.animation.generic.move_sittable",
+          "sit_sound_controller": "controller.animation.pet.sit",
+          "ambient_sound_controller": "controller.animation.pet.ambient"
+        },
+        "scripts": {
+          "animate": [
+            "move_sittable",
+            "sit_sound_controller",
+            "ambient_sound_controller"
+          ]
+        },
+        "sound_effects": {
+          "sit": "custom.pets.slime.sit",
+          "ambient": "custom.pets.slime.ambient"
+        }
+      }
+    }
+  }

@@ -1,0 +1,1 @@
+execute @e[family=npc] ~ ~ ~ tp @s ~ ~ ~ facing @p

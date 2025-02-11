@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.icon_cake",
+				"texture_width": 48,
+				"texture_height": 48,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "icon",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-4, 0, -13], "size": [8, 1, 11], "pivot": [0, 0, 0], "rotation": [-90, 0, 0], "uv": [0, 0]},
+						{"origin": [4, 0, -12], "size": [2, 1, 9], "pivot": [0, 0, 0], "rotation": [-90, 0, 0], "uv": [13, 13]},
+						{"origin": [-6, 0, -12], "size": [2, 1, 9], "pivot": [0, 0, 0], "rotation": [-90, 0, 0], "uv": [0, 12]},
+						{"origin": [-7, 0, -11], "size": [1, 1, 7], "pivot": [0, 0, 0], "rotation": [-90, 0, 0], "uv": [9, 23]},
+						{"origin": [6, 0, -11], "size": [1, 1, 7], "pivot": [0, 0, 0], "rotation": [-90, 0, 0], "uv": [0, 22]}
+					]
+				}
+			]
+		}
+	]
+}

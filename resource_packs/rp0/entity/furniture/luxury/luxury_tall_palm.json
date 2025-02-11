@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:luxury_tall_palm",
+        "materials": {
+          "default": "entity_alphatest"
+        },
+        "textures": {
+          "default": "textures/custom/entity/furniture/luxury/luxury_tall_palm"
+        },
+        "geometry": {
+          "default": "geometry.luxury_tall_palm"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "furniture_egg_luxury_tall_palm" }
+      }
+    }
+  }

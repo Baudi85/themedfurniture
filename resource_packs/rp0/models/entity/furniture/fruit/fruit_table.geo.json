@@ -1,0 +1,32 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.fruit_table",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "watermelon_table",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-16, 2, -8.5], "size": [32, 6, 4.5], "uv": [0, 0]},
+						{"origin": [6, 1.9975, -4.5359], "size": [8, 6, 8.8], "pivot": [14, 2, -0.5359], "rotation": [0, -30, 0], "uv": [0, 46]},
+						{"origin": [-4, 1.9925, -4], "size": [8, 6, 12], "uv": [0, 61]},
+						{"origin": [1.19615, 1.995, -6.4641], "size": [8.8, 6, 12], "pivot": [7.19615, 2, 1.5359], "rotation": [0, 30, 0], "uv": [0, 28]},
+						{"origin": [-14, 1.9975, -4.5359], "size": [8, 6, 8.8], "pivot": [-14, 2, -0.5359], "rotation": [0, 30, 0], "uv": [32, 38]},
+						{"origin": [-9.99615, 1.99, -6.4641], "size": [8.8, 6, 12], "pivot": [-7.19615, 2, 1.5359], "rotation": [0, -30, 0], "uv": [0, 10]},
+						{"origin": [-13, 0, -6], "size": [2, 2, 2], "uv": [0, 18]},
+						{"origin": [11, 0, -6], "size": [2, 2, 2], "uv": [0, 14]},
+						{"origin": [-1, 0, 3], "size": [2, 2, 2], "uv": [0, 10]}
+					]
+				}
+			]
+		}
+	]
+}

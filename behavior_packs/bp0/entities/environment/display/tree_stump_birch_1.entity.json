@@ -1,0 +1,32 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:display_tree_stump_birch_1",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "spawn_egg": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+    },
+    "components": {
+      
+      "minecraft:damage_sensor": {
+        "triggers": [
+           {
+          "cause": "all",
+          "deals_damage": false
+            }
+          ]
+      },
+      "minecraft:type_family": { "family": [ "display", "display_environment", "display_stump" ] },
+      "minecraft:collision_box": {
+        "width": 0.0,
+        "height": 0.0
+      }
+    },
+    "events": {
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "tiers": [
+        {
+            "trades": [
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 5 } ],
+                    "gives": [ { "item": "minecraft:potion", "quantity": 1, "functions": [ { "function": "set_data", "data": 5 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 5 } ],
+                    "gives": [ { "item": "minecraft:potion", "quantity": 1, "functions": [ { "function": "set_data", "data": 14 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 5 } ],
+                    "gives": [ { "item": "minecraft:potion", "quantity": 1, "functions": [ { "function": "set_data", "data": 20 } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 5 } ],
+                    "gives": [ { "item": "minecraft:potion", "quantity": 1, "functions": [ { "function": "set_data", "data": 30 } ] } ],
+                    "max_uses": -1
+                }
+                
+            ]
+        }
+    ]
+}
+
+
+

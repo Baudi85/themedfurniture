@@ -1,0 +1,80 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.tree_stump_1",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "tree_stump_1",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-8, 0, -8], "size": [16, 16, 16], "uv": [0, 0]},
+						{"origin": [5, 0.025, 5], "size": [5, 7, 5], "uv": [22, 49]},
+						{"origin": [3, 0.025, -10], "size": [7, 10, 6], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "bone3",
+					"parent": "tree_stump_1",
+					"pivot": [11.9, 2.9, 11.7],
+					"rotation": [0, 37.5, 0],
+					"cubes": [
+						{"origin": [9.63205, -2.06472, 7.3004], "size": [3, 4, 5], "pivot": [9.63205, 2.93528, 12.3004], "rotation": [-22.5, 0, 0], "uv": [50, 32]}
+					]
+				},
+				{
+					"name": "bone6",
+					"parent": "tree_stump_1",
+					"pivot": [-11.7, 1.9, 3.3],
+					"rotation": [0, -107.5, 0],
+					"cubes": [
+						{"origin": [-13.96795, -1.06472, -1.0996], "size": [3, 3, 9], "pivot": [-13.96795, 2.93528, 3.9004], "rotation": [-22.5, 0, 0], "uv": [48, 0]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "tree_stump_1",
+					"pivot": [13.2, 1.4, -14.5],
+					"rotation": [0, 50, 0],
+					"cubes": [
+						{"origin": [6.56747, 1.23873, -17.80642], "size": [5, 11, 6], "pivot": [13.2, 1.4, -14.5], "rotation": [0, 0, -52.5], "uv": [44, 43]}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "tree_stump_1",
+					"pivot": [-12.8, 2.4, 12.5],
+					"rotation": [0, -135, 0],
+					"cubes": [
+						{"origin": [-20.43253, 2.23873, 9.19358], "size": [6, 11, 6], "pivot": [-12.8, 2.4, 12.5], "rotation": [0, 0, -52.5], "uv": [26, 32]}
+					]
+				},
+				{
+					"name": "bone5",
+					"parent": "tree_stump_1",
+					"pivot": [-10.9, 2.4, -10.6],
+					"rotation": [0, 135, 0],
+					"cubes": [
+						{"origin": [-17.96822, 0.90852, -12.64388], "size": [6, 11, 5], "pivot": [-10.9, 2.4, -10.6], "rotation": [2.5, 0, -36.5], "uv": [0, 48]}
+					]
+				},
+				{
+					"name": "bone4",
+					"parent": "tree_stump_1",
+					"pivot": [-1.8, 2.4, -5.5],
+					"rotation": [7.5, 135, 10],
+					"cubes": [
+						{"origin": [-7.26876, -0.71212, -9.56034], "size": [3, 10, 3], "pivot": [-2.66588, 1.00665, -2.19358], "rotation": [5, -75, -5], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

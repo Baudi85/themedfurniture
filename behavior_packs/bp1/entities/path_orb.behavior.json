@@ -1,0 +1,29 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ts:path_orb",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "despawn": { "minecraft:instant_despawn": {} }
+    },
+
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "any",
+          "deals_damage": false
+        }
+      },
+      "minecraft:collision_box": { "width": 0, "height": 0 }
+    },
+
+    "events": {
+      "trigger_despawn": { "add": { "component_groups": [ "despawn" ] } }
+    }
+  }
+}

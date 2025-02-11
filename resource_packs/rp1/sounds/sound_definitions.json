@@ -1,0 +1,70 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+      
+    "custom.tools.rotate": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/custom/tools/rotate"
+        }
+      ]
+    },
+    "custom.tools.despawner": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/custom/tools/despawner"
+        }
+      ]
+    },
+    "custom.tools.move": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/custom/tools/move"
+        }
+      ]
+    },
+    "custom.tools.shift": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/custom/tools/shift"
+        }
+      ]
+    },
+    "custom.tools.center": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/custom/tools/center"
+        }
+      ]
+    },
+    "custom.tools.toggle_lights": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/custom/tools/toggle_lights"
+        }
+      ]
+    },
+    
+    
+
+    "custom.sound_effects.fireworks": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/sound_effects/fireworks"
+      ]
+    }
+
+  }
+}

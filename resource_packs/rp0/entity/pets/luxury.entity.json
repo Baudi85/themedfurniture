@@ -1,0 +1,41 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:chibi_luxury",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/pets/luxury"
+        },
+        "geometry": {
+          "default": "geometry.chibi_tiger"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "chibi_egg_luxury" },
+        "animations": {
+          "walk": "animation.chibi_tiger.walk",
+          "idle": "animation.chibi_tiger.idle",
+          "sit": "animation.chibi_tiger.sit",
+
+          "move_sittable": "controller.animation.generic.move_sittable",
+          "sit_sound_controller": "controller.animation.pet.sit",
+          "ambient_sound_controller": "controller.animation.pet.ambient"
+        },
+        "scripts": {
+          "animate": [
+            "move_sittable",
+            "sit_sound_controller",
+            "ambient_sound_controller"
+          ]
+        },
+        "sound_effects": {
+          "sit": "custom.pets.tiger.sit",
+          "ambient": "custom.pets.tiger.ambient"
+        }
+      }
+    }
+  }

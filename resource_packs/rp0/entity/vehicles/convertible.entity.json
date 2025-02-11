@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "custom:convertible",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "convertible_blue": "textures/custom/entity/vehicles/convertible_blue",
+        "convertible_green": "textures/custom/entity/vehicles/convertible_green",
+        "convertible_indigo": "textures/custom/entity/vehicles/convertible_indigo",
+        "convertible_light_blue": "textures/custom/entity/vehicles/convertible_light_blue",
+        "convertible_light_pink": "textures/custom/entity/vehicles/convertible_light_pink",
+        "convertible_lime": "textures/custom/entity/vehicles/convertible_lime",
+        "convertible_magenta": "textures/custom/entity/vehicles/convertible_magenta",
+        "convertible_orange": "textures/custom/entity/vehicles/convertible_orange",
+        "convertible_pink": "textures/custom/entity/vehicles/convertible_pink",
+        "convertible_purple": "textures/custom/entity/vehicles/convertible_purple",
+        "convertible_red": "textures/custom/entity/vehicles/convertible_red",
+        "convertible_teal": "textures/custom/entity/vehicles/convertible_teal",
+        "convertible_yellow": "textures/custom/entity/vehicles/convertible_yellow"
+      },
+      "geometry": {
+        "default": "geometry.convertible"
+      },
+      "render_controllers": [
+        "controller.render.convertible"
+      ],
+      "spawn_egg": {
+        "base_color": "#333333",
+        "overlay_color": "#aaaaaa"
+      }
+    }
+  }
+}

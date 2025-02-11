@@ -1,0 +1,65 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "custom:mars_tall_floor_lamp_toggle_only",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "spawn_egg": true,
+      "is_experimental": false,
+      "animations": {
+        "init": "controller.animation.furniture.init",
+        "toggle_lights": "controller.animation.furniture.toggle_lights"
+
+      },
+      "scripts": {
+        "animate": [
+          "init",
+          "toggle_lights"
+        ]
+      }
+    },
+    "component_groups": {
+      "toggle_lights": { "minecraft:skin_id": { "value": 13 } },
+      "usable": {
+        "minecraft:interact": {
+          "interactions": [
+            { "on_interact": { "event": "toggle_lights" } }
+          ]
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+               { "cause": "all", "deals_damage": false }
+            ]
+        }
+      },
+      "display_only": {
+        "minecraft:interact": { "interactions": [ { "on_interact": { "event": "toggle_lights" } } ] }
+      }
+    },
+    "components": {
+      "minecraft:physics": {},
+      "minecraft:type_family": {
+        "family": [
+          "custom", "furniture", "mars_furniture"
+        ]
+      },
+      "minecraft:scale": { "value": 1 },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 2.0
+      },
+      "minecraft:breathable": {
+        "breathes_solids": true,
+        "breathes_lava": true,
+        "breathes_water": true,
+        "breathes_air": true
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": { "add": { "component_groups": [ "reset", "usable" ] } },
+
+      "toggle_lights": { "add": { "component_groups": [ "toggle_lights" ] } }
+    }
+  }
+}

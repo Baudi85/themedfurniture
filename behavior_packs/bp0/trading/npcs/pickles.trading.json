@@ -1,0 +1,87 @@
+{
+    "tiers": [
+        {
+            "trades": [
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 25 } ],
+                    "gives": [ { "item": "minecraft:diamond", "quantity": 1  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 22 } ],
+                    "gives": [ { "item": "minecraft:redstone_block", "quantity": 1 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 6 } ],
+                    "gives": [ { "item": "minecraft:raw_gold", "quantity": 1  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 7 } ],
+                    "gives": [ { "item": "minecraft:lapis_lazuli", "quantity": 1  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 4 } ],
+                    "gives": [ { "item": "minecraft:raw_iron", "quantity": 1  } ],
+                    "max_uses": -1
+                },
+
+
+                {
+                    "wants": [ { "item": "minecraft:diamond", "quantity": 1 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 20  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:redstone_block", "quantity": 1 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 15 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:raw_gold", "quantity": 1 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 3  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:lapis_lazuli", "quantity": 1 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 3  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:raw_iron", "quantity": 1 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 2  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:torch", "quantity": 64 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 5  } ],
+                    "max_uses": -1
+                },
+
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:torch", "quantity": 64  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 6 } ],
+                    "gives": [ { "item": "minecraft:iron_pickaxe"  } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 8 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:dynamite" } ] } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 20 } ],
+                    "gives": [ { "item": "minecraft:spawn_egg", "functions": [ { "function": "set_actor_id", "id": "custom:dynamite_big" } ] } ],
+                    "max_uses": -1
+                }
+                
+            ]
+        }
+    ]
+}

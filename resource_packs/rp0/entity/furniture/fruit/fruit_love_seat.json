@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "custom:fruit_love_seat",
+        "materials": {
+          "default": "entity"
+        },
+        "textures": {
+          "default": "textures/custom/entity/furniture/fruit/fruit_love_seat"
+        },
+        "geometry": {
+          "default": "geometry.fruit_love_seat"
+        },
+        "render_controllers": [
+          "controller.render.generic"
+        ],
+        "spawn_egg": { "texture": "furniture_egg_fruit_love_seat" }
+      }
+    }
+  }

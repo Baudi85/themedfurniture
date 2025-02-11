@@ -1,0 +1,22 @@
+{
+  "resource_pack_name": "Themed Furniture",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "decoration_forest": { "textures": [ "textures/custom/blocks/decoration/forest" ] },
+    "decoration_fruit": { "textures": [ "textures/custom/blocks/decoration/fruit" ] },
+    "decoration_gold": { "textures": [ "textures/custom/blocks/decoration/gold" ] },
+    "decoration_luxury": { "textures": [ "textures/custom/blocks/decoration/luxury" ] },
+    "decoration_mars": { "textures": [ "textures/custom/blocks/decoration/mars" ] },
+    "decoration_mars_purple": { "textures": [ "textures/custom/blocks/decoration/mars_purple" ] },
+    "decoration_mermaid": { "textures": [ "textures/custom/blocks/decoration/mermaid" ] },
+    "decoration_rainbow": { "textures": [ "textures/custom/blocks/decoration/rainbow" ] },
+    "decoration_valentines": { "textures": [ "textures/custom/blocks/decoration/valentines" ] },
+    "decoration_winter": { "textures": [ "textures/custom/blocks/decoration/winter" ] },
+    "decoration_zen": { "textures": [ "textures/custom/blocks/decoration/zen" ] },
+
+    "golden_bedrock": { "textures": [ "textures/custom/blocks/golden_bedrock" ] },
+    "quartz_bedrock": { "textures": [ "textures/blocks/quartz_block_side" ] }
+  }
+}

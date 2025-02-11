@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.rainbow_dining_table",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "rainbow_dining_table",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-24, 10, -11], "size": [48, 3, 22], "uv": [0, 0]},
+						{"origin": [-4.5, 5, -5.5], "size": [9, 6, 11], "uv": [0, 25]},
+						{"origin": [-9.5, 5, -5.5], "size": [5, 6, 11], "pivot": [-4.5, 11, -5.5], "rotation": [0, 0, -15], "uv": [52, 25]},
+						{"origin": [-18.24454, 0.26445, -5.5], "size": [4, 6, 11], "pivot": [-14.24454, 6.26445, -5.5], "rotation": [0, 0, -52.5], "uv": [0, 59]},
+						{"origin": [-19.67959, -2.90897, -5.5], "size": [3, 6, 11], "pivot": [-16.67959, 3.09103, -5.5], "rotation": [0, 0, -67.5], "uv": [19, 65]},
+						{"origin": [-15.32963, 3.7059, -5.5], "size": [6, 6, 11], "pivot": [-9.32963, 9.7059, -5.5], "rotation": [0, 0, -35], "uv": [0, 42]},
+						{"origin": [16.67959, -2.90897, -5.5], "size": [3, 6, 11], "pivot": [16.67959, 3.09103, -5.5], "rotation": [0, 0, 67.5], "uv": [44, 59]},
+						{"origin": [14.24454, 0.26445, -5.5], "size": [4, 6, 11], "pivot": [14.24454, 6.26445, -5.5], "rotation": [0, 0, 52.5], "uv": [52, 42]},
+						{"origin": [9.32963, 3.7059, -5.5], "size": [6, 6, 11], "pivot": [9.32963, 9.7059, -5.5], "rotation": [0, 0, 35], "uv": [29, 31]},
+						{"origin": [4.5, 5, -5.5], "size": [5, 6, 11], "pivot": [4.5, 11, -5.5], "rotation": [0, 0, 15], "uv": [23, 48]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "custom:car",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "car_blue": "textures/custom/entity/vehicles/car_blue",
+        "car_green": "textures/custom/entity/vehicles/car_green",
+        "car_indigo": "textures/custom/entity/vehicles/car_indigo",
+        "car_lime": "textures/custom/entity/vehicles/car_lime",
+        "car_magenta": "textures/custom/entity/vehicles/car_magenta",
+        "car_orange": "textures/custom/entity/vehicles/car_orange",
+        "car_pink": "textures/custom/entity/vehicles/car_pink",
+        "car_purple": "textures/custom/entity/vehicles/car_purple",
+        "car_red": "textures/custom/entity/vehicles/car_red",
+        "car_teal": "textures/custom/entity/vehicles/car_teal",
+        "car_yellow": "textures/custom/entity/vehicles/car_yellow"
+      },
+      "geometry": {
+        "default": "geometry.car"
+      },
+      "render_controllers": [
+        "controller.render.car"
+      ],
+      "spawn_egg": {
+        "base_color": "#333333",
+        "overlay_color": "#aaaaaa"
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+execute @e[family=display_gold] ~ ~ ~ summon custom:display_target

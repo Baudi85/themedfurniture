@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.zen_dining_chair",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "dining_chair_zen",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6, 0, -6], "size": [2, 6, 12], "uv": [16, 20]},
+						{"origin": [4, 0, -6], "size": [2, 6, 12], "uv": [0, 14]},
+						{"origin": [-6, 6, -6], "size": [12, 2, 12], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

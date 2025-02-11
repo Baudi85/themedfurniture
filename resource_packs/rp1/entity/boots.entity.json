@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ts:boots",
+      "materials": {
+        "default": "boots"
+      },
+      "textures": {
+        "default": "textures/entity/boots/leather"
+      },
+      "geometry": {
+        "default": "geometry.boots"
+      },
+      "render_controllers": [
+        "controller.render.boots"
+      ],
+      "spawn_egg": {
+        "base_color": "#8b74a7",
+        "overlay_color": "26ba4e"
+      }
+    }
+  }
+}

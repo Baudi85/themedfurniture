@@ -1,0 +1,54 @@
+{
+    "tiers": [
+        {
+            "trades": [
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 6 } ],
+                    "gives": [ { "item": "minecraft:fish", "quantity": 10 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 6 } ],
+                    "gives": [ { "item": "minecraft:salmon", "quantity": 10 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 7 } ],
+                    "gives": [ { "item": "minecraft:pufferfish", "quantity": 5 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:emerald", "quantity": 5 } ],
+                    "gives": [ { "item": "minecraft:fishing_rod", "quantity": 1 } ],
+                    "max_uses": -1
+                },
+
+
+
+                {
+                    "wants": [ { "item": "minecraft:fish", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 4 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:salmon", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 4 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:pufferfish", "quantity": 10 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 5 } ],
+                    "max_uses": -1
+                },
+                {
+                    "wants": [ { "item": "minecraft:fishing_rod", "quantity": 1 } ],
+                    "gives": [ { "item": "minecraft:emerald", "quantity": 3 } ],
+                    "max_uses": -1
+                }
+            ]
+        }
+    ]
+}
+
+
+
